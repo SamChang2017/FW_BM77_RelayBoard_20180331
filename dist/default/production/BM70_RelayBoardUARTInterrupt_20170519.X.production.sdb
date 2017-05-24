@@ -27,8 +27,10 @@
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"30 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\main.c
+"32 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\main.c
 [v _main main `(v  1 e 0 0 ]
+"105
+[v _relayControl relayControl `(v  1 e 0 0 ]
 "75 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 0 0 ]
 "112
@@ -71,7 +73,7 @@
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
 "8172
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-[s S512 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S524 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -81,31 +83,31 @@
 `uc 1 LATD7 1 0 :1:7 
 ]
 "8220
-[s S521 . 1 `uc 1 LD0 1 0 :1:0 
+[s S533 . 1 `uc 1 LD0 1 0 :1:0 
 ]
-[s S523 . 1 `uc 1 . 1 0 :1:0 
+[s S535 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 ]
-[s S526 . 1 `uc 1 . 1 0 :2:0 
+[s S538 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LD2 1 0 :1:2 
 ]
-[s S529 . 1 `uc 1 . 1 0 :3:0 
+[s S541 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 LD3 1 0 :1:3 
 ]
-[s S532 . 1 `uc 1 . 1 0 :4:0 
+[s S544 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LD4 1 0 :1:4 
 ]
-[s S535 . 1 `uc 1 . 1 0 :5:0 
+[s S547 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LD5 1 0 :1:5 
 ]
-[s S538 . 1 `uc 1 . 1 0 :6:0 
+[s S550 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LD6 1 0 :1:6 
 ]
-[s S541 . 1 `uc 1 . 1 0 :7:0 
+[s S553 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LD7 1 0 :1:7 
 ]
-[u S544 . 1 `S512 1 . 1 0 `S521 1 . 1 0 `S523 1 . 1 0 `S526 1 . 1 0 `S529 1 . 1 0 `S532 1 . 1 0 `S535 1 . 1 0 `S538 1 . 1 0 `S541 1 . 1 0 ]
-[v _LATDbits LATDbits `VES544  1 e 1 @3980 ]
+[u S556 . 1 `S524 1 . 1 0 `S533 1 . 1 0 `S535 1 . 1 0 `S538 1 . 1 0 `S541 1 . 1 0 `S544 1 . 1 0 `S547 1 . 1 0 `S550 1 . 1 0 `S553 1 . 1 0 ]
+[v _LATDbits LATDbits `VES556  1 e 1 @3980 ]
 "8304
 [v _LATE LATE `VEuc  1 e 1 @3981 ]
 "8406
@@ -280,6 +282,10 @@
 ]
 [u S350 . 1 `S315 1 . 1 0 `S324 1 . 1 0 `S333 1 . 1 0 `S324 1 . 1 0 `S333 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES350  1 e 1 @4082 ]
+"29 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\main.c
+[v _TFNum TFNum `uc  1 e 1 0 ]
+"30
+[v _site0_IL site0_IL `[16]uc  1 e 16 0 ]
 "61 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/eusart1.c
 [v _eusart1TxHead eusart1TxHead `uc  1 s 1 eusart1TxHead ]
 "62
@@ -296,18 +302,29 @@
 [v _eusart1RxBuffer eusart1RxBuffer `[8]uc  1 s 8 eusart1RxBuffer ]
 "69
 [v _eusart1RxCount eusart1RxCount `VEuc  1 e 1 0 ]
-"30 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\main.c
+"32 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\main.c
 [v _main main `(v  1 e 0 0 ]
 {
-"55
-[v main@count_633 count `i  1 a 2 27 ]
-"53
-[v main@flashCount flashCount `i  1 a 2 25 ]
-"46
-[v main@count count `i  1 a 2 23 ]
-"38
-[v main@data data `uc  1 a 1 22 ]
-"68
+"77
+[v main@count_640 count `i  1 a 2 26 ]
+"75
+[v main@flashCount flashCount `i  1 a 2 24 ]
+"67
+[v main@count count `i  1 a 2 22 ]
+"40
+[v main@RxData RxData `uc  1 a 1 28 ]
+"92
+} 0
+"105
+[v _relayControl relayControl `(v  1 e 0 0 ]
+{
+[v relayControl@data data `uc  1 a 1 wreg ]
+"111
+[v relayControl@count count `i  1 a 2 17 ]
+"105
+[v relayControl@data data `uc  1 a 1 wreg ]
+[v relayControl@data data `uc  1 a 1 16 ]
+"126
 } 0
 "464 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
 [v _printf printf `(i  1 e 2 0 ]
@@ -317,7 +334,7 @@
 "499
 [v printf@c c `c  1 a 1 20 ]
 "464
-[v printf@f f `*.32Cuc  1 p 2 16 ]
+[v printf@f f `*.25Cuc  1 p 2 16 ]
 "1541
 } 0
 "160 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/eusart1.c
