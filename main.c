@@ -6,6 +6,9 @@
 
   Summary:
     This is the BM70 relay board main file created on 2017/05/15 
+ * always print LED_8 toggle 
+ * alwyas LED_8 toggle
+ * UART interrupt. When receive input by RX, LED_7 toggle
 
   Description:
     This header file provides implementations for driver APIs for all modules selected in the GUI.
