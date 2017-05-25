@@ -119,6 +119,60 @@ void relayControl(char data){
         case 98: // 'b' set high RD_0
             IO_RD0_SetHigh();
             break;
+        case 88: // 'X' clsoe all 
+            // site 0
+            IO_RA0_SetLow(); //CD1_1 
+            IO_RA1_SetLow(); //CD1_2 
+            IO_RA2_SetLow(); //CD1_3 
+            IO_RA3_SetLow(); //CD1_4 
+            IO_RA4_SetLow(); //CD1_5 
+            IO_RA5_SetLow(); //CD1_6 
+            IO_RE0_SetLow(); //CD1_7 
+            IO_RE1_SetLow(); //CD1_8 
+            IO_RE2_SetLow(); //CD2_9 
+            IO_RA6_SetLow(); //CD2_10 
+            IO_RC0_SetLow(); //CD2_11 
+            IO_RC1_SetLow(); //CD2_12 
+            IO_RC2_SetLow(); //CD2_13 
+            IO_RD0_SetLow(); //CD2_14 
+            IO_RD1_SetLow(); //CD2_15 
+            break;
+        case 2: // site 0
+            IO_RA0_SetLow(); //CD1_1 
+            break;
+        case 34: // site 0
+            IO_RA0_SetHigh(); //CD1_1
+            break;
+        case 4: // site 0 
+            IO_RA1_SetLow(); //CD1_2
+            break;
+        case 36: // site 0
+            IO_RA1_SetHigh(); //CD1_2
+            break;
+        case 6: // site 0
+            IO_RA2_SetLow();  //CD1_3
+            break;
+        case 38: // site 0
+            IO_RA2_SetHigh(); //CD1_3
+            break;
+        case 8: // site 0
+            IO_RA3_SetLow(); // CD1_4
+            break;
+        case 40: // site 0
+            IO_RA3_SetHigh(); //CD1_4
+            break;
+         case 10: // site 0
+            IO_RA4_SetLow(); // CD1_5
+            break;
+        case 42: // site 0
+            IO_RA4_SetHigh(); //CD1_5
+            break;
+        case 12: // site 0
+            IO_RA5_SetLow(); // CD1_6
+            break;
+        case 44: // site 0
+            IO_RA5_SetHigh(); //CD1_6
+            break;
         default:
             EUSART1_Write('U');
             break;

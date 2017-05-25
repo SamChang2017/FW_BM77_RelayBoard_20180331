@@ -81,6 +81,102 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _eusart1RxCount `Vuc ~T0 @X0 0 e ]
 "106
 [v _EUSART1_Initialize `(v ~T0 @X0 0 ef ]
+"7782 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f45k22.h
+[s S470 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S470 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
+"7792
+[s S471 :1 `uc 1 ]
+[n S471 . LA0 ]
+"7795
+[s S472 :1 `uc 1 :1 `uc 1 ]
+[n S472 . . LA1 ]
+"7799
+[s S473 :2 `uc 1 :1 `uc 1 ]
+[n S473 . . LA2 ]
+"7803
+[s S474 :3 `uc 1 :1 `uc 1 ]
+[n S474 . . LA3 ]
+"7807
+[s S475 :4 `uc 1 :1 `uc 1 ]
+[n S475 . . LA4 ]
+"7811
+[s S476 :5 `uc 1 :1 `uc 1 ]
+[n S476 . . LA5 ]
+"7815
+[s S477 :6 `uc 1 :1 `uc 1 ]
+[n S477 . . LA6 ]
+"7819
+[s S478 :7 `uc 1 :1 `uc 1 ]
+[n S478 . . LA7 ]
+"7781
+[u S469 `S470 1 `S471 1 `S472 1 `S473 1 `S474 1 `S475 1 `S476 1 `S477 1 `S478 1 ]
+[n S469 . . . . . . . . . . ]
+"7824
+[v _LATAbits `VS469 ~T0 @X0 0 e@3977 ]
+"8310
+[s S510 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S510 . LATE0 LATE1 LATE2 ]
+"8315
+[s S511 :1 `uc 1 ]
+[n S511 . LE0 ]
+"8318
+[s S512 :1 `uc 1 :1 `uc 1 ]
+[n S512 . . LE1 ]
+"8322
+[s S513 :2 `uc 1 :1 `uc 1 ]
+[n S513 . . LE2 ]
+"8326
+[s S514 :3 `uc 1 :1 `uc 1 ]
+[n S514 . . LE3 ]
+"8330
+[s S515 :4 `uc 1 :1 `uc 1 ]
+[n S515 . . LE4 ]
+"8334
+[s S516 :5 `uc 1 :1 `uc 1 ]
+[n S516 . . LE5 ]
+"8338
+[s S517 :6 `uc 1 :1 `uc 1 ]
+[n S517 . . LE6 ]
+"8342
+[s S518 :7 `uc 1 :1 `uc 1 ]
+[n S518 . . LE7 ]
+"8309
+[u S509 `S510 1 `S511 1 `S512 1 `S513 1 `S514 1 `S515 1 `S516 1 `S517 1 `S518 1 ]
+[n S509 . . . . . . . . . . ]
+"8347
+[v _LATEbits `VS509 ~T0 @X0 0 e@3981 ]
+"8046
+[s S490 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S490 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+"8056
+[s S491 :1 `uc 1 ]
+[n S491 . LC0 ]
+"8059
+[s S492 :1 `uc 1 :1 `uc 1 ]
+[n S492 . . LC1 ]
+"8063
+[s S493 :2 `uc 1 :1 `uc 1 ]
+[n S493 . . LC2 ]
+"8067
+[s S494 :3 `uc 1 :1 `uc 1 ]
+[n S494 . . LC3 ]
+"8071
+[s S495 :4 `uc 1 :1 `uc 1 ]
+[n S495 . . LC4 ]
+"8075
+[s S496 :5 `uc 1 :1 `uc 1 ]
+[n S496 . . LC5 ]
+"8079
+[s S497 :6 `uc 1 :1 `uc 1 ]
+[n S497 . . LC6 ]
+"8083
+[s S498 :7 `uc 1 :1 `uc 1 ]
+[n S498 . . LC7 ]
+"8045
+[u S489 `S490 1 `S491 1 `S492 1 `S493 1 `S494 1 `S495 1 `S496 1 `S497 1 `S498 1 ]
+[n S489 . . . . . . . . . . ]
+"8088
+[v _LATCbits `VS489 ~T0 @X0 0 e@3979 ]
 [; ;stdio.h: 8: typedef int ptrdiff_t;
 [; ;stdio.h: 9: typedef unsigned size_t;
 [; ;stdio.h: 10: typedef unsigned short wchar_t;
@@ -7911,18 +8007,285 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 121: break;
 "121
 [e $U 1165  ]
-[; ;main.c: 122: default:
+[; ;main.c: 122: case 88:
 "122
 [e :U 1180 ]
-[; ;main.c: 123: EUSART1_Write('U');
-"123
-[e ( _EUSART1_Write (1 -> -> 85 `ui `uc ]
-[; ;main.c: 124: break;
+[; ;main.c: 124: do { LATAbits.LATA0 = 0; } while(0);
 "124
-[e $U 1165  ]
-"125
+[e :U 1183 ]
+{
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 }
-[; ;main.c: 125: }
+[e :U 1182 ]
+[; ;main.c: 125: do { LATAbits.LATA1 = 0; } while(0);
+"125
+[e :U 1186 ]
+{
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1185 ]
+[; ;main.c: 126: do { LATAbits.LATA2 = 0; } while(0);
+"126
+[e :U 1189 ]
+{
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 1188 ]
+[; ;main.c: 127: do { LATAbits.LATA3 = 0; } while(0);
+"127
+[e :U 1192 ]
+{
+[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
+}
+[e :U 1191 ]
+[; ;main.c: 128: do { LATAbits.LATA4 = 0; } while(0);
+"128
+[e :U 1195 ]
+{
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 1194 ]
+[; ;main.c: 129: do { LATAbits.LATA5 = 0; } while(0);
+"129
+[e :U 1198 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 1197 ]
+[; ;main.c: 130: do { LATEbits.LATE0 = 0; } while(0);
+"130
+[e :U 1201 ]
+{
+[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1200 ]
+[; ;main.c: 131: do { LATEbits.LATE1 = 0; } while(0);
+"131
+[e :U 1204 ]
+{
+[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1203 ]
+[; ;main.c: 132: do { LATEbits.LATE2 = 0; } while(0);
+"132
+[e :U 1207 ]
+{
+[e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 1206 ]
+[; ;main.c: 133: do { LATAbits.LATA6 = 0; } while(0);
+"133
+[e :U 1210 ]
+{
+[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
+}
+[e :U 1209 ]
+[; ;main.c: 134: do { LATCbits.LATC0 = 0; } while(0);
+"134
+[e :U 1213 ]
+{
+[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1212 ]
+[; ;main.c: 135: do { LATCbits.LATC1 = 0; } while(0);
+"135
+[e :U 1216 ]
+{
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1215 ]
+[; ;main.c: 136: do { LATCbits.LATC2 = 0; } while(0);
+"136
+[e :U 1219 ]
+{
+[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 1218 ]
+[; ;main.c: 137: do { LATDbits.LATD0 = 0; } while(0);
+"137
+[e :U 1222 ]
+{
+[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1221 ]
+[; ;main.c: 138: do { LATDbits.LATD1 = 0; } while(0);
+"138
+[e :U 1225 ]
+{
+[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1224 ]
+[; ;main.c: 139: break;
+"139
+[e $U 1165  ]
+[; ;main.c: 140: case 2:
+"140
+[e :U 1226 ]
+[; ;main.c: 141: do { LATAbits.LATA0 = 0; } while(0);
+"141
+[e :U 1229 ]
+{
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1228 ]
+[; ;main.c: 142: break;
+"142
+[e $U 1165  ]
+[; ;main.c: 143: case 34:
+"143
+[e :U 1230 ]
+[; ;main.c: 144: do { LATAbits.LATA0 = 1; } while(0);
+"144
+[e :U 1233 ]
+{
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 1232 ]
+[; ;main.c: 145: break;
+"145
+[e $U 1165  ]
+[; ;main.c: 146: case 4:
+"146
+[e :U 1234 ]
+[; ;main.c: 147: do { LATAbits.LATA1 = 0; } while(0);
+"147
+[e :U 1237 ]
+{
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1236 ]
+[; ;main.c: 148: break;
+"148
+[e $U 1165  ]
+[; ;main.c: 149: case 36:
+"149
+[e :U 1238 ]
+[; ;main.c: 150: do { LATAbits.LATA1 = 1; } while(0);
+"150
+[e :U 1241 ]
+{
+[e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
+}
+[e :U 1240 ]
+[; ;main.c: 151: break;
+"151
+[e $U 1165  ]
+[; ;main.c: 152: case 6:
+"152
+[e :U 1242 ]
+[; ;main.c: 153: do { LATAbits.LATA2 = 0; } while(0);
+"153
+[e :U 1245 ]
+{
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 1244 ]
+[; ;main.c: 154: break;
+"154
+[e $U 1165  ]
+[; ;main.c: 155: case 38:
+"155
+[e :U 1246 ]
+[; ;main.c: 156: do { LATAbits.LATA2 = 1; } while(0);
+"156
+[e :U 1249 ]
+{
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
+}
+[e :U 1248 ]
+[; ;main.c: 157: break;
+"157
+[e $U 1165  ]
+[; ;main.c: 158: case 8:
+"158
+[e :U 1250 ]
+[; ;main.c: 159: do { LATAbits.LATA3 = 0; } while(0);
+"159
+[e :U 1253 ]
+{
+[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
+}
+[e :U 1252 ]
+[; ;main.c: 160: break;
+"160
+[e $U 1165  ]
+[; ;main.c: 161: case 40:
+"161
+[e :U 1254 ]
+[; ;main.c: 162: do { LATAbits.LATA3 = 1; } while(0);
+"162
+[e :U 1257 ]
+{
+[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 1256 ]
+[; ;main.c: 163: break;
+"163
+[e $U 1165  ]
+[; ;main.c: 164: case 10:
+"164
+[e :U 1258 ]
+[; ;main.c: 165: do { LATAbits.LATA4 = 0; } while(0);
+"165
+[e :U 1261 ]
+{
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 1260 ]
+[; ;main.c: 166: break;
+"166
+[e $U 1165  ]
+[; ;main.c: 167: case 42:
+"167
+[e :U 1262 ]
+[; ;main.c: 168: do { LATAbits.LATA4 = 1; } while(0);
+"168
+[e :U 1265 ]
+{
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 1264 ]
+[; ;main.c: 169: break;
+"169
+[e $U 1165  ]
+[; ;main.c: 170: case 12:
+"170
+[e :U 1266 ]
+[; ;main.c: 171: do { LATAbits.LATA5 = 0; } while(0);
+"171
+[e :U 1269 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 1268 ]
+[; ;main.c: 172: break;
+"172
+[e $U 1165  ]
+[; ;main.c: 173: case 44:
+"173
+[e :U 1270 ]
+[; ;main.c: 174: do { LATAbits.LATA5 = 1; } while(0);
+"174
+[e :U 1273 ]
+{
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+}
+[e :U 1272 ]
+[; ;main.c: 175: break;
+"175
+[e $U 1165  ]
+[; ;main.c: 176: default:
+"176
+[e :U 1274 ]
+[; ;main.c: 177: EUSART1_Write('U');
+"177
+[e ( _EUSART1_Write (1 -> -> 85 `ui `uc ]
+[; ;main.c: 178: break;
+"178
+[e $U 1165  ]
+"179
+}
+[; ;main.c: 179: }
 [e $U 1165  ]
 "106
 [e :U 1166 ]
@@ -7930,11 +8293,24 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> -> 73 `i `uc 1168
  , $ -> -> 97 `i `uc 1172
  , $ -> -> 98 `i `uc 1176
- 1180 ]
-"125
+ , $ -> -> 88 `i `uc 1180
+ , $ -> -> 2 `i `uc 1226
+ , $ -> -> 34 `i `uc 1230
+ , $ -> -> 4 `i `uc 1234
+ , $ -> -> 36 `i `uc 1238
+ , $ -> -> 6 `i `uc 1242
+ , $ -> -> 38 `i `uc 1246
+ , $ -> -> 8 `i `uc 1250
+ , $ -> -> 40 `i `uc 1254
+ , $ -> -> 10 `i `uc 1258
+ , $ -> -> 42 `i `uc 1262
+ , $ -> -> 12 `i `uc 1266
+ , $ -> -> 44 `i `uc 1270
+ 1274 ]
+"179
 [e :U 1165 ]
-[; ;main.c: 126: }
-"126
+[; ;main.c: 180: }
+"180
 [e :UE 1164 ]
 }
 [p f _printf 8388608 ]

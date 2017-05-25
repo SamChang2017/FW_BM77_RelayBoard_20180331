@@ -9640,6 +9640,60 @@ break;
 case 98:
 do { LATDbits.LATD0 = 1; } while(0);
 break;
+case 88:
+
+do { LATAbits.LATA0 = 0; } while(0);
+do { LATAbits.LATA1 = 0; } while(0);
+do { LATAbits.LATA2 = 0; } while(0);
+do { LATAbits.LATA3 = 0; } while(0);
+do { LATAbits.LATA4 = 0; } while(0);
+do { LATAbits.LATA5 = 0; } while(0);
+do { LATEbits.LATE0 = 0; } while(0);
+do { LATEbits.LATE1 = 0; } while(0);
+do { LATEbits.LATE2 = 0; } while(0);
+do { LATAbits.LATA6 = 0; } while(0);
+do { LATCbits.LATC0 = 0; } while(0);
+do { LATCbits.LATC1 = 0; } while(0);
+do { LATCbits.LATC2 = 0; } while(0);
+do { LATDbits.LATD0 = 0; } while(0);
+do { LATDbits.LATD1 = 0; } while(0);
+break;
+case 2:
+do { LATAbits.LATA0 = 0; } while(0);
+break;
+case 34:
+do { LATAbits.LATA0 = 1; } while(0);
+break;
+case 4:
+do { LATAbits.LATA1 = 0; } while(0);
+break;
+case 36:
+do { LATAbits.LATA1 = 1; } while(0);
+break;
+case 6:
+do { LATAbits.LATA2 = 0; } while(0);
+break;
+case 38:
+do { LATAbits.LATA2 = 1; } while(0);
+break;
+case 8:
+do { LATAbits.LATA3 = 0; } while(0);
+break;
+case 40:
+do { LATAbits.LATA3 = 1; } while(0);
+break;
+case 10:
+do { LATAbits.LATA4 = 0; } while(0);
+break;
+case 42:
+do { LATAbits.LATA4 = 1; } while(0);
+break;
+case 12:
+do { LATAbits.LATA5 = 0; } while(0);
+break;
+case 44:
+do { LATAbits.LATA5 = 1; } while(0);
+break;
 default:
 EUSART1_Write('U');
 break;
