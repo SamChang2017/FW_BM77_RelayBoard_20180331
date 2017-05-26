@@ -29,7 +29,7 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "32 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\main.c
 [v _main main `(v  1 e 0 0 ]
-"105
+"126
 [v _relayControl relayControl `(v  1 e 0 0 ]
 "75 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 0 0 ]
@@ -67,7 +67,7 @@
 [v _WPUB WPUB `VEuc  1 e 1 @3937 ]
 "7776
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
-[s S624 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S512 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -77,36 +77,36 @@
 `uc 1 LATA7 1 0 :1:7 
 ]
 "7824
-[s S633 . 1 `uc 1 LA0 1 0 :1:0 
+[s S521 . 1 `uc 1 LA0 1 0 :1:0 
 ]
-[s S635 . 1 `uc 1 . 1 0 :1:0 
+[s S523 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LA1 1 0 :1:1 
 ]
-[s S638 . 1 `uc 1 . 1 0 :2:0 
+[s S526 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LA2 1 0 :1:2 
 ]
-[s S641 . 1 `uc 1 . 1 0 :3:0 
+[s S529 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 LA3 1 0 :1:3 
 ]
-[s S644 . 1 `uc 1 . 1 0 :4:0 
+[s S532 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LA4 1 0 :1:4 
 ]
-[s S647 . 1 `uc 1 . 1 0 :5:0 
+[s S535 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LA5 1 0 :1:5 
 ]
-[s S650 . 1 `uc 1 . 1 0 :6:0 
+[s S538 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LA6 1 0 :1:6 
 ]
-[s S653 . 1 `uc 1 . 1 0 :7:0 
+[s S541 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LA7 1 0 :1:7 
 ]
-[u S656 . 1 `S624 1 . 1 0 `S633 1 . 1 0 `S635 1 . 1 0 `S638 1 . 1 0 `S641 1 . 1 0 `S644 1 . 1 0 `S647 1 . 1 0 `S650 1 . 1 0 `S653 1 . 1 0 ]
-[v _LATAbits LATAbits `VES656  1 e 1 @3977 ]
+[u S544 . 1 `S512 1 . 1 0 `S521 1 . 1 0 `S523 1 . 1 0 `S526 1 . 1 0 `S529 1 . 1 0 `S532 1 . 1 0 `S535 1 . 1 0 `S538 1 . 1 0 `S541 1 . 1 0 ]
+[v _LATAbits LATAbits `VES544  1 e 1 @3977 ]
 "7908
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
 "8040
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
-[s S764 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S652 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -116,34 +116,34 @@
 `uc 1 LATC7 1 0 :1:7 
 ]
 "8088
-[s S773 . 1 `uc 1 LC0 1 0 :1:0 
+[s S661 . 1 `uc 1 LC0 1 0 :1:0 
 ]
-[s S775 . 1 `uc 1 . 1 0 :1:0 
+[s S663 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LC1 1 0 :1:1 
 ]
-[s S778 . 1 `uc 1 . 1 0 :2:0 
+[s S666 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LC2 1 0 :1:2 
 ]
-[s S781 . 1 `uc 1 . 1 0 :3:0 
+[s S669 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 LC3 1 0 :1:3 
 ]
-[s S784 . 1 `uc 1 . 1 0 :4:0 
+[s S672 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LC4 1 0 :1:4 
 ]
-[s S787 . 1 `uc 1 . 1 0 :5:0 
+[s S675 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LC5 1 0 :1:5 
 ]
-[s S790 . 1 `uc 1 . 1 0 :6:0 
+[s S678 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LC6 1 0 :1:6 
 ]
-[s S793 . 1 `uc 1 . 1 0 :7:0 
+[s S681 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LC7 1 0 :1:7 
 ]
-[u S796 . 1 `S764 1 . 1 0 `S773 1 . 1 0 `S775 1 . 1 0 `S778 1 . 1 0 `S781 1 . 1 0 `S784 1 . 1 0 `S787 1 . 1 0 `S790 1 . 1 0 `S793 1 . 1 0 ]
-[v _LATCbits LATCbits `VES796  1 e 1 @3979 ]
+[u S684 . 1 `S652 1 . 1 0 `S661 1 . 1 0 `S663 1 . 1 0 `S666 1 . 1 0 `S669 1 . 1 0 `S672 1 . 1 0 `S675 1 . 1 0 `S678 1 . 1 0 `S681 1 . 1 0 ]
+[v _LATCbits LATCbits `VES684  1 e 1 @3979 ]
 "8172
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-[s S524 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S727 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -153,63 +153,63 @@
 `uc 1 LATD7 1 0 :1:7 
 ]
 "8220
-[s S533 . 1 `uc 1 LD0 1 0 :1:0 
+[s S736 . 1 `uc 1 LD0 1 0 :1:0 
 ]
-[s S535 . 1 `uc 1 . 1 0 :1:0 
+[s S738 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 ]
-[s S538 . 1 `uc 1 . 1 0 :2:0 
+[s S741 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LD2 1 0 :1:2 
 ]
-[s S541 . 1 `uc 1 . 1 0 :3:0 
+[s S744 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 LD3 1 0 :1:3 
 ]
-[s S544 . 1 `uc 1 . 1 0 :4:0 
+[s S747 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LD4 1 0 :1:4 
 ]
-[s S547 . 1 `uc 1 . 1 0 :5:0 
+[s S750 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LD5 1 0 :1:5 
 ]
-[s S550 . 1 `uc 1 . 1 0 :6:0 
+[s S753 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LD6 1 0 :1:6 
 ]
-[s S553 . 1 `uc 1 . 1 0 :7:0 
+[s S756 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LD7 1 0 :1:7 
 ]
-[u S556 . 1 `S524 1 . 1 0 `S533 1 . 1 0 `S535 1 . 1 0 `S538 1 . 1 0 `S541 1 . 1 0 `S544 1 . 1 0 `S547 1 . 1 0 `S550 1 . 1 0 `S553 1 . 1 0 ]
-[v _LATDbits LATDbits `VES556  1 e 1 @3980 ]
+[u S759 . 1 `S727 1 . 1 0 `S736 1 . 1 0 `S738 1 . 1 0 `S741 1 . 1 0 `S744 1 . 1 0 `S747 1 . 1 0 `S750 1 . 1 0 `S753 1 . 1 0 `S756 1 . 1 0 ]
+[v _LATDbits LATDbits `VES759  1 e 1 @3980 ]
 "8304
 [v _LATE LATE `VEuc  1 e 1 @3981 ]
-[s S699 . 1 `uc 1 LATE0 1 0 :1:0 
+[s S587 . 1 `uc 1 LATE0 1 0 :1:0 
 `uc 1 LATE1 1 0 :1:1 
 `uc 1 LATE2 1 0 :1:2 
 ]
 "8347
-[s S703 . 1 `uc 1 LE0 1 0 :1:0 
+[s S591 . 1 `uc 1 LE0 1 0 :1:0 
 ]
-[s S705 . 1 `uc 1 . 1 0 :1:0 
+[s S593 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LE1 1 0 :1:1 
 ]
-[s S708 . 1 `uc 1 . 1 0 :2:0 
+[s S596 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LE2 1 0 :1:2 
 ]
-[s S711 . 1 `uc 1 . 1 0 :3:0 
+[s S599 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 LE3 1 0 :1:3 
 ]
-[s S714 . 1 `uc 1 . 1 0 :4:0 
+[s S602 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LE4 1 0 :1:4 
 ]
-[s S717 . 1 `uc 1 . 1 0 :5:0 
+[s S605 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LE5 1 0 :1:5 
 ]
-[s S720 . 1 `uc 1 . 1 0 :6:0 
+[s S608 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LE6 1 0 :1:6 
 ]
-[s S723 . 1 `uc 1 . 1 0 :7:0 
+[s S611 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LE7 1 0 :1:7 
 ]
-[u S726 . 1 `S699 1 . 1 0 `S703 1 . 1 0 `S705 1 . 1 0 `S708 1 . 1 0 `S711 1 . 1 0 `S714 1 . 1 0 `S717 1 . 1 0 `S720 1 . 1 0 `S723 1 . 1 0 ]
-[v _LATEbits LATEbits `VES726  1 e 1 @3981 ]
+[u S614 . 1 `S587 1 . 1 0 `S591 1 . 1 0 `S593 1 . 1 0 `S596 1 . 1 0 `S599 1 . 1 0 `S602 1 . 1 0 `S605 1 . 1 0 `S608 1 . 1 0 `S611 1 . 1 0 ]
+[v _LATEbits LATEbits `VES614  1 e 1 @3981 ]
 "8406
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "8627
@@ -405,26 +405,20 @@
 "32 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\main.c
 [v _main main `(v  1 e 0 0 ]
 {
-"77
-[v main@count_855 count `i  1 a 2 26 ]
-"75
-[v main@flashCount flashCount `i  1 a 2 24 ]
-"67
-[v main@count count `i  1 a 2 22 ]
 "40
-[v main@RxData RxData `uc  1 a 1 28 ]
-"92
+[v main@RxData RxData `uc  1 a 1 21 ]
+"113
 } 0
-"105
+"126
 [v _relayControl relayControl `(v  1 e 0 0 ]
 {
 [v relayControl@data data `uc  1 a 1 wreg ]
-"111
+"132
 [v relayControl@count count `i  1 a 2 17 ]
-"105
+"126
 [v relayControl@data data `uc  1 a 1 wreg ]
 [v relayControl@data data `uc  1 a 1 16 ]
-"180
+"271
 } 0
 "464 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
 [v _printf printf `(i  1 e 2 0 ]

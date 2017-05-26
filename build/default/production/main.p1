@@ -22,66 +22,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1110 . . . . . . ]
 "17650
 [v _INTCONbits `VS1110 ~T0 @X0 0 e@4082 ]
-"207 C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdio.h
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-[v F7961 `(v ~T0 @X0 1 tf1`ul ]
-"161 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18.h
-[v __delay `JF7961 ~T0 @X0 0 e ]
-[p i __delay ]
-"155 mcc_generated_files/eusart1.h
-[v _EUSART1_Read `(uc ~T0 @X0 0 ef ]
-"8178 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f45k22.h
-[s S500 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S500 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
-"8188
-[s S501 :1 `uc 1 ]
-[n S501 . LD0 ]
-"8191
-[s S502 :1 `uc 1 :1 `uc 1 ]
-[n S502 . . LD1 ]
-"8195
-[s S503 :2 `uc 1 :1 `uc 1 ]
-[n S503 . . LD2 ]
-"8199
-[s S504 :3 `uc 1 :1 `uc 1 ]
-[n S504 . . LD3 ]
-"8203
-[s S505 :4 `uc 1 :1 `uc 1 ]
-[n S505 . . LD4 ]
-"8207
-[s S506 :5 `uc 1 :1 `uc 1 ]
-[n S506 . . LD5 ]
-"8211
-[s S507 :6 `uc 1 :1 `uc 1 ]
-[n S507 . . LD6 ]
-"8215
-[s S508 :7 `uc 1 :1 `uc 1 ]
-[n S508 . . LD7 ]
-"8177
-[u S499 `S500 1 `S501 1 `S502 1 `S503 1 `S504 1 `S505 1 `S506 1 `S507 1 `S508 1 ]
-[n S499 . . . . . . . . . . ]
-"8220
-[v _LATDbits `VS499 ~T0 @X0 0 e@3980 ]
-"9759
-[s S563 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S563 . TMR1IE TMR2IE CCP1IE SSP1IE TX1IE RC1IE ADIE ]
-"9768
-[s S564 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S564 . . SSPIE TXIE RCIE ]
-"9758
-[u S562 `S563 1 `S564 1 ]
-[n S562 . . . ]
-"9775
-[v _PIE1bits `VS562 ~T0 @X0 0 e@3997 ]
-"180 mcc_generated_files/eusart1.h
-[v _EUSART1_Write `(v ~T0 @X0 0 ef1`uc ]
-"27 main.c
-[v _relayControl `(v ~T0 @X0 0 ef1`uc ]
-"78 mcc_generated_files/eusart1.h
-[v _eusart1RxCount `Vuc ~T0 @X0 0 e ]
-"106
-[v _EUSART1_Initialize `(v ~T0 @X0 0 ef ]
-"7782 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f45k22.h
+"7782
 [s S470 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S470 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
 "7792
@@ -177,6 +118,65 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S489 . . . . . . . . . . ]
 "8088
 [v _LATCbits `VS489 ~T0 @X0 0 e@3979 ]
+"8178
+[s S500 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S500 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+"8188
+[s S501 :1 `uc 1 ]
+[n S501 . LD0 ]
+"8191
+[s S502 :1 `uc 1 :1 `uc 1 ]
+[n S502 . . LD1 ]
+"8195
+[s S503 :2 `uc 1 :1 `uc 1 ]
+[n S503 . . LD2 ]
+"8199
+[s S504 :3 `uc 1 :1 `uc 1 ]
+[n S504 . . LD3 ]
+"8203
+[s S505 :4 `uc 1 :1 `uc 1 ]
+[n S505 . . LD4 ]
+"8207
+[s S506 :5 `uc 1 :1 `uc 1 ]
+[n S506 . . LD5 ]
+"8211
+[s S507 :6 `uc 1 :1 `uc 1 ]
+[n S507 . . LD6 ]
+"8215
+[s S508 :7 `uc 1 :1 `uc 1 ]
+[n S508 . . LD7 ]
+"8177
+[u S499 `S500 1 `S501 1 `S502 1 `S503 1 `S504 1 `S505 1 `S506 1 `S507 1 `S508 1 ]
+[n S499 . . . . . . . . . . ]
+"8220
+[v _LATDbits `VS499 ~T0 @X0 0 e@3980 ]
+"155 mcc_generated_files/eusart1.h
+[v _EUSART1_Read `(uc ~T0 @X0 0 ef ]
+"9759 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f45k22.h
+[s S563 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S563 . TMR1IE TMR2IE CCP1IE SSP1IE TX1IE RC1IE ADIE ]
+"9768
+[s S564 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S564 . . SSPIE TXIE RCIE ]
+"9758
+[u S562 `S563 1 `S564 1 ]
+[n S562 . . . ]
+"9775
+[v _PIE1bits `VS562 ~T0 @X0 0 e@3997 ]
+"180 mcc_generated_files/eusart1.h
+[v _EUSART1_Write `(v ~T0 @X0 0 ef1`uc ]
+"207 C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"27 main.c
+[v _relayControl `(v ~T0 @X0 0 ef1`uc ]
+"78 mcc_generated_files/eusart1.h
+[v _eusart1RxCount `Vuc ~T0 @X0 0 e ]
+"106
+[v _EUSART1_Initialize `(v ~T0 @X0 0 ef ]
+[v F7961 `(v ~T0 @X0 1 tf1`ul ]
+"161 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18.h
+[v __delay `JF7961 ~T0 @X0 0 e ]
+[p i __delay ]
 [; ;stdio.h: 8: typedef int ptrdiff_t;
 [; ;stdio.h: 9: typedef unsigned size_t;
 [; ;stdio.h: 10: typedef unsigned short wchar_t;
@@ -7781,538 +7781,923 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 61: site0_IL[15] = '7';
 "61
 [e = *U + &U _site0_IL * -> -> -> 15 `i `ui `ux -> -> # *U &U _site0_IL `ui `ux -> -> 55 `ui `uc ]
-[; ;main.c: 63: while (1)
-"63
-[e :U 1143 ]
-[; ;main.c: 64: {
+[; ;main.c: 64: do { LATAbits.LATA0 = 0; } while(0);
 "64
-{
-[; ;main.c: 65: printf("\r\nLED_D0 toggle\r\n");
-"65
-[e ( _printf :s 1C ]
-[; ;main.c: 67: for (int count=0; count<20; count++){
-"67
-{
-[v _count `i ~T0 @X0 1 a ]
-[e = _count -> 0 `i ]
-[e $ < _count -> 20 `i 1145  ]
-[e $U 1146  ]
-[e :U 1145 ]
-{
-[; ;main.c: 68: _delay((unsigned long)((25)*(8000000/4000.0)));
-"68
-[e ( __delay (1 -> * -> -> 25 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"69
-}
-"67
-[e ++ _count -> 1 `i ]
-[e $ < _count -> 20 `i 1145  ]
-[e :U 1146 ]
-"69
-}
-[; ;main.c: 69: }
-[; ;main.c: 72: while((eusart1RxCount)){
-"72
-[e $U 1148  ]
-[e :U 1149 ]
-{
-[; ;main.c: 74: RxData = EUSART1_Read();
-"74
-[e = _RxData ( _EUSART1_Read ..  ]
-[; ;main.c: 75: for (int flashCount=0; flashCount<20; flashCount++){
-"75
-{
-[v _flashCount `i ~T0 @X0 1 a ]
-[e = _flashCount -> 0 `i ]
-[e $ < _flashCount -> 20 `i 1151  ]
-[e $U 1152  ]
-[e :U 1151 ]
-{
-[; ;main.c: 76: do { LATDbits.LATD1 = ~LATDbits.LATD1; } while(0);
-"76
-[e :U 1156 ]
-{
-[e = . . _LATDbits 0 1 -> ~ -> . . _LATDbits 0 1 `i `uc ]
-}
-[e :U 1155 ]
-[; ;main.c: 77: for (int count=0; count<20; count++){
-"77
-{
-[v _count `i ~T0 @X0 1 a ]
-[e = _count -> 0 `i ]
-[e $ < _count -> 20 `i 1157  ]
-[e $U 1158  ]
-[e :U 1157 ]
-{
-[; ;main.c: 78: _delay((unsigned long)((15)*(8000000/4000.0)));
-"78
-[e ( __delay (1 -> * -> -> 15 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"79
-}
-"77
-[e ++ _count -> 1 `i ]
-[e $ < _count -> 20 `i 1157  ]
-[e :U 1158 ]
-"79
-}
-"80
-}
-"75
-[e ++ _flashCount -> 1 `i ]
-[e $ < _flashCount -> 20 `i 1151  ]
-[e :U 1152 ]
-"80
-}
-[; ;main.c: 79: }
-[; ;main.c: 80: }
-[; ;main.c: 81: PIE1bits.TX1IE=0;
-"81
-[e = . . _PIE1bits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 82: EUSART1_Write(RxData);
-"82
-[e ( _EUSART1_Write (1 _RxData ]
-[; ;main.c: 83: printf("\r\n");
-"83
-[e ( _printf :s 2C ]
-[; ;main.c: 85: relayControl(RxData);
-"85
-[e ( _relayControl (1 _RxData ]
-"86
-}
-[e :U 1148 ]
-"72
-[e $ != -> _eusart1RxCount `i -> -> -> 0 `i `Vuc `i 1149  ]
-[e :U 1150 ]
-[; ;main.c: 86: };
-"90
-}
-[e :U 1142 ]
-"63
-[e $U 1143  ]
 [e :U 1144 ]
-[; ;main.c: 90: }
-[; ;main.c: 92: }
-"92
-[e :UE 1141 ]
-}
-"95
-[v _sendString `(v ~T0 @X0 1 ef1`*Cuc ]
-"96
-{
-[; ;main.c: 95: void sendString(const char *dataPtr)
-[; ;main.c: 96: {
-[e :U _sendString ]
-"95
-[v _dataPtr `*Cuc ~T0 @X0 1 r1 ]
-"96
-[f ]
-[; ;main.c: 97: EUSART1_Initialize();
-"97
-[e ( _EUSART1_Initialize ..  ]
-[; ;main.c: 98: while(*dataPtr!='\0'){
-"98
-[e $U 1161  ]
-[e :U 1162 ]
-{
-[; ;main.c: 99: EUSART1_Write(*dataPtr);
-"99
-[e ( _EUSART1_Write (1 *U _dataPtr ]
-[; ;main.c: 100: dataPtr++;
-"100
-[e ++ _dataPtr * -> -> 1 `i `x -> -> # *U _dataPtr `i `x ]
-"101
-}
-[e :U 1161 ]
-"98
-[e $ != -> *U _dataPtr `ui -> 0 `ui 1162  ]
-[e :U 1163 ]
-[; ;main.c: 101: }
-[; ;main.c: 102: }
-"102
-[e :UE 1160 ]
-}
-"105
-[v _relayControl `(v ~T0 @X0 1 ef1`uc ]
-{
-[; ;main.c: 105: void relayControl(char data){
-[e :U _relayControl ]
-[v _data `uc ~T0 @X0 1 r1 ]
-[f ]
-[; ;main.c: 106: switch (data){
-"106
-[e $U 1166  ]
-{
-[; ;main.c: 107: case 84:
-"107
-[e :U 1167 ]
-[; ;main.c: 108: EUSART1_Write(TFNum);
-"108
-[e ( _EUSART1_Write (1 _TFNum ]
-[; ;main.c: 109: break;
-"109
-[e $U 1165  ]
-[; ;main.c: 110: case 73:
-"110
-[e :U 1168 ]
-[; ;main.c: 111: for (int count=0; count<16; count++){
-"111
-{
-[v _count `i ~T0 @X0 1 a ]
-[e = _count -> 0 `i ]
-[e $ < _count -> 16 `i 1169  ]
-[e $U 1170  ]
-[e :U 1169 ]
-{
-[; ;main.c: 112: EUSART1_Write(site0_IL[count]);
-"112
-[e ( _EUSART1_Write (1 *U + &U _site0_IL * -> -> _count `ui `ux -> -> # *U &U _site0_IL `ui `ux ]
-[; ;main.c: 113: _delay((unsigned long)((25)*(8000000/4000.0)));
-"113
-[e ( __delay (1 -> * -> -> 25 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"114
-}
-"111
-[e ++ _count -> 1 `i ]
-[e $ < _count -> 16 `i 1169  ]
-[e :U 1170 ]
-"114
-}
-[; ;main.c: 114: }
-[; ;main.c: 115: break;
-"115
-[e $U 1165  ]
-[; ;main.c: 116: case 97:
-"116
-[e :U 1172 ]
-[; ;main.c: 117: do { LATDbits.LATD0 = 0; } while(0);
-"117
-[e :U 1175 ]
-{
-[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
-}
-[e :U 1174 ]
-[; ;main.c: 118: break;
-"118
-[e $U 1165  ]
-[; ;main.c: 119: case 98:
-"119
-[e :U 1176 ]
-[; ;main.c: 120: do { LATDbits.LATD0 = 1; } while(0);
-"120
-[e :U 1179 ]
-{
-[e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
-}
-[e :U 1178 ]
-[; ;main.c: 121: break;
-"121
-[e $U 1165  ]
-[; ;main.c: 122: case 88:
-"122
-[e :U 1180 ]
-[; ;main.c: 124: do { LATAbits.LATA0 = 0; } while(0);
-"124
-[e :U 1183 ]
 {
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 1182 ]
-[; ;main.c: 125: do { LATAbits.LATA1 = 0; } while(0);
-"125
-[e :U 1186 ]
+[e :U 1143 ]
+[; ;main.c: 65: do { LATAbits.LATA1 = 0; } while(0);
+"65
+[e :U 1147 ]
 {
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 }
-[e :U 1185 ]
-[; ;main.c: 126: do { LATAbits.LATA2 = 0; } while(0);
-"126
-[e :U 1189 ]
+[e :U 1146 ]
+[; ;main.c: 66: do { LATAbits.LATA2 = 0; } while(0);
+"66
+[e :U 1150 ]
 {
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 }
-[e :U 1188 ]
-[; ;main.c: 127: do { LATAbits.LATA3 = 0; } while(0);
-"127
-[e :U 1192 ]
+[e :U 1149 ]
+[; ;main.c: 67: do { LATAbits.LATA3 = 0; } while(0);
+"67
+[e :U 1153 ]
 {
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 1191 ]
-[; ;main.c: 128: do { LATAbits.LATA4 = 0; } while(0);
-"128
-[e :U 1195 ]
+[e :U 1152 ]
+[; ;main.c: 68: do { LATAbits.LATA4 = 0; } while(0);
+"68
+[e :U 1156 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 1194 ]
-[; ;main.c: 129: do { LATAbits.LATA5 = 0; } while(0);
-"129
-[e :U 1198 ]
+[e :U 1155 ]
+[; ;main.c: 69: do { LATAbits.LATA5 = 0; } while(0);
+"69
+[e :U 1159 ]
 {
 [e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
 }
-[e :U 1197 ]
-[; ;main.c: 130: do { LATEbits.LATE0 = 0; } while(0);
-"130
-[e :U 1201 ]
+[e :U 1158 ]
+[; ;main.c: 70: do { LATEbits.LATE0 = 0; } while(0);
+"70
+[e :U 1162 ]
 {
 [e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 1200 ]
-[; ;main.c: 131: do { LATEbits.LATE1 = 0; } while(0);
-"131
-[e :U 1204 ]
+[e :U 1161 ]
+[; ;main.c: 71: do { LATEbits.LATE1 = 0; } while(0);
+"71
+[e :U 1165 ]
 {
 [e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
 }
-[e :U 1203 ]
-[; ;main.c: 132: do { LATEbits.LATE2 = 0; } while(0);
-"132
-[e :U 1207 ]
+[e :U 1164 ]
+[; ;main.c: 72: do { LATEbits.LATE2 = 0; } while(0);
+"72
+[e :U 1168 ]
 {
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
 }
-[e :U 1206 ]
-[; ;main.c: 133: do { LATAbits.LATA6 = 0; } while(0);
-"133
-[e :U 1210 ]
+[e :U 1167 ]
+[; ;main.c: 73: do { LATAbits.LATA6 = 0; } while(0);
+"73
+[e :U 1171 ]
 {
 [e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
 }
-[e :U 1209 ]
-[; ;main.c: 134: do { LATCbits.LATC0 = 0; } while(0);
-"134
-[e :U 1213 ]
+[e :U 1170 ]
+[; ;main.c: 74: do { LATCbits.LATC0 = 0; } while(0);
+"74
+[e :U 1174 ]
 {
 [e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 1212 ]
-[; ;main.c: 135: do { LATCbits.LATC1 = 0; } while(0);
-"135
-[e :U 1216 ]
+[e :U 1173 ]
+[; ;main.c: 75: do { LATCbits.LATC1 = 0; } while(0);
+"75
+[e :U 1177 ]
 {
 [e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
 }
-[e :U 1215 ]
-[; ;main.c: 136: do { LATCbits.LATC2 = 0; } while(0);
-"136
-[e :U 1219 ]
+[e :U 1176 ]
+[; ;main.c: 76: do { LATCbits.LATC2 = 0; } while(0);
+"76
+[e :U 1180 ]
 {
 [e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
 }
-[e :U 1218 ]
-[; ;main.c: 137: do { LATDbits.LATD0 = 0; } while(0);
-"137
-[e :U 1222 ]
+[e :U 1179 ]
+[; ;main.c: 77: do { LATDbits.LATD0 = 0; } while(0);
+"77
+[e :U 1183 ]
 {
 [e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 1221 ]
-[; ;main.c: 138: do { LATDbits.LATD1 = 0; } while(0);
-"138
-[e :U 1225 ]
+[e :U 1182 ]
+[; ;main.c: 78: do { LATDbits.LATD1 = 0; } while(0);
+"78
+[e :U 1186 ]
 {
 [e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
 }
-[e :U 1224 ]
+[e :U 1185 ]
+[; ;main.c: 80: while (1)
+"80
+[e :U 1188 ]
+[; ;main.c: 81: {
+"81
+{
+[; ;main.c: 90: while((eusart1RxCount)){
+"90
+[e $U 1190  ]
+[e :U 1191 ]
+{
+[; ;main.c: 92: RxData = EUSART1_Read();
+"92
+[e = _RxData ( _EUSART1_Read ..  ]
+[; ;main.c: 103: PIE1bits.TX1IE=0;
+"103
+[e = . . _PIE1bits 0 4 -> -> 0 `i `uc ]
+[; ;main.c: 104: EUSART1_Write(RxData);
+"104
+[e ( _EUSART1_Write (1 _RxData ]
+[; ;main.c: 105: printf("\r\n");
+"105
+[e ( _printf :s 1C ]
+[; ;main.c: 109: relayControl(RxData);
+"109
+[e ( _relayControl (1 _RxData ]
+"110
+}
+[e :U 1190 ]
+"90
+[e $ != -> _eusart1RxCount `i -> -> -> 0 `i `Vuc `i 1191  ]
+[e :U 1192 ]
+[; ;main.c: 110: };
+"111
+}
+[e :U 1187 ]
+"80
+[e $U 1188  ]
+[e :U 1189 ]
+[; ;main.c: 111: }
+[; ;main.c: 113: }
+"113
+[e :UE 1141 ]
+}
+"116
+[v _sendString `(v ~T0 @X0 1 ef1`*Cuc ]
+"117
+{
+[; ;main.c: 116: void sendString(const char *dataPtr)
+[; ;main.c: 117: {
+[e :U _sendString ]
+"116
+[v _dataPtr `*Cuc ~T0 @X0 1 r1 ]
+"117
+[f ]
+[; ;main.c: 118: EUSART1_Initialize();
+"118
+[e ( _EUSART1_Initialize ..  ]
+[; ;main.c: 119: while(*dataPtr!='\0'){
+"119
+[e $U 1194  ]
+[e :U 1195 ]
+{
+[; ;main.c: 120: EUSART1_Write(*dataPtr);
+"120
+[e ( _EUSART1_Write (1 *U _dataPtr ]
+[; ;main.c: 121: dataPtr++;
+"121
+[e ++ _dataPtr * -> -> 1 `i `x -> -> # *U _dataPtr `i `x ]
+"122
+}
+[e :U 1194 ]
+"119
+[e $ != -> *U _dataPtr `ui -> 0 `ui 1195  ]
+[e :U 1196 ]
+[; ;main.c: 122: }
+[; ;main.c: 123: }
+"123
+[e :UE 1193 ]
+}
+"126
+[v _relayControl `(v ~T0 @X0 1 ef1`uc ]
+{
+[; ;main.c: 126: void relayControl(char data){
+[e :U _relayControl ]
+[v _data `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;main.c: 127: switch (data){
+"127
+[e $U 1199  ]
+{
+[; ;main.c: 128: case 84:
+"128
+[e :U 1200 ]
+[; ;main.c: 129: EUSART1_Write(TFNum);
+"129
+[e ( _EUSART1_Write (1 _TFNum ]
+[; ;main.c: 130: break;
+"130
+[e $U 1198  ]
+[; ;main.c: 131: case 73:
+"131
+[e :U 1201 ]
+[; ;main.c: 132: for (int count=0; count<16; count++){
+"132
+{
+[v _count `i ~T0 @X0 1 a ]
+[e = _count -> 0 `i ]
+[e $ < _count -> 16 `i 1202  ]
+[e $U 1203  ]
+[e :U 1202 ]
+{
+[; ;main.c: 133: EUSART1_Write(site0_IL[count]);
+"133
+[e ( _EUSART1_Write (1 *U + &U _site0_IL * -> -> _count `ui `ux -> -> # *U &U _site0_IL `ui `ux ]
+[; ;main.c: 134: _delay((unsigned long)((25)*(8000000/4000.0)));
+"134
+[e ( __delay (1 -> * -> -> 25 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"135
+}
+"132
+[e ++ _count -> 1 `i ]
+[e $ < _count -> 16 `i 1202  ]
+[e :U 1203 ]
+"135
+}
+[; ;main.c: 135: }
+[; ;main.c: 136: break;
+"136
+[e $U 1198  ]
+[; ;main.c: 137: case 97:
+"137
+[e :U 1205 ]
+[; ;main.c: 138: do { LATDbits.LATD0 = 0; } while(0);
+"138
+[e :U 1208 ]
+{
+[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1207 ]
 [; ;main.c: 139: break;
 "139
-[e $U 1165  ]
-[; ;main.c: 140: case 2:
+[e $U 1198  ]
+[; ;main.c: 140: case 98:
 "140
-[e :U 1226 ]
-[; ;main.c: 141: do { LATAbits.LATA0 = 0; } while(0);
+[e :U 1209 ]
+[; ;main.c: 141: do { LATDbits.LATD0 = 1; } while(0);
 "141
-[e :U 1229 ]
+[e :U 1212 ]
+{
+[e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 1211 ]
+[; ;main.c: 142: break;
+"142
+[e $U 1198  ]
+[; ;main.c: 143: case 88:
+"143
+[e :U 1213 ]
+[; ;main.c: 145: do { LATAbits.LATA0 = 0; } while(0);
+"145
+[e :U 1216 ]
 {
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 1228 ]
-[; ;main.c: 142: break;
-"142
-[e $U 1165  ]
-[; ;main.c: 143: case 34:
-"143
-[e :U 1230 ]
-[; ;main.c: 144: do { LATAbits.LATA0 = 1; } while(0);
-"144
-[e :U 1233 ]
-{
-[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
-}
-[e :U 1232 ]
-[; ;main.c: 145: break;
-"145
-[e $U 1165  ]
-[; ;main.c: 146: case 4:
+[e :U 1215 ]
+[; ;main.c: 146: do { LATAbits.LATA1 = 0; } while(0);
 "146
-[e :U 1234 ]
-[; ;main.c: 147: do { LATAbits.LATA1 = 0; } while(0);
-"147
-[e :U 1237 ]
+[e :U 1219 ]
 {
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 }
-[e :U 1236 ]
-[; ;main.c: 148: break;
-"148
-[e $U 1165  ]
-[; ;main.c: 149: case 36:
-"149
-[e :U 1238 ]
-[; ;main.c: 150: do { LATAbits.LATA1 = 1; } while(0);
-"150
-[e :U 1241 ]
-{
-[e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
-}
-[e :U 1240 ]
-[; ;main.c: 151: break;
-"151
-[e $U 1165  ]
-[; ;main.c: 152: case 6:
-"152
-[e :U 1242 ]
-[; ;main.c: 153: do { LATAbits.LATA2 = 0; } while(0);
-"153
-[e :U 1245 ]
+[e :U 1218 ]
+[; ;main.c: 147: do { LATAbits.LATA2 = 0; } while(0);
+"147
+[e :U 1222 ]
 {
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 }
-[e :U 1244 ]
-[; ;main.c: 154: break;
-"154
-[e $U 1165  ]
-[; ;main.c: 155: case 38:
-"155
-[e :U 1246 ]
-[; ;main.c: 156: do { LATAbits.LATA2 = 1; } while(0);
-"156
-[e :U 1249 ]
-{
-[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
-}
-[e :U 1248 ]
-[; ;main.c: 157: break;
-"157
-[e $U 1165  ]
-[; ;main.c: 158: case 8:
-"158
-[e :U 1250 ]
-[; ;main.c: 159: do { LATAbits.LATA3 = 0; } while(0);
-"159
-[e :U 1253 ]
+[e :U 1221 ]
+[; ;main.c: 148: do { LATAbits.LATA3 = 0; } while(0);
+"148
+[e :U 1225 ]
 {
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 1252 ]
-[; ;main.c: 160: break;
-"160
-[e $U 1165  ]
-[; ;main.c: 161: case 40:
-"161
-[e :U 1254 ]
-[; ;main.c: 162: do { LATAbits.LATA3 = 1; } while(0);
-"162
-[e :U 1257 ]
-{
-[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
-}
-[e :U 1256 ]
-[; ;main.c: 163: break;
-"163
-[e $U 1165  ]
-[; ;main.c: 164: case 10:
-"164
-[e :U 1258 ]
-[; ;main.c: 165: do { LATAbits.LATA4 = 0; } while(0);
-"165
-[e :U 1261 ]
+[e :U 1224 ]
+[; ;main.c: 149: do { LATAbits.LATA4 = 0; } while(0);
+"149
+[e :U 1228 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 1260 ]
-[; ;main.c: 166: break;
-"166
-[e $U 1165  ]
-[; ;main.c: 167: case 42:
-"167
-[e :U 1262 ]
-[; ;main.c: 168: do { LATAbits.LATA4 = 1; } while(0);
-"168
-[e :U 1265 ]
-{
-[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
-}
-[e :U 1264 ]
-[; ;main.c: 169: break;
-"169
-[e $U 1165  ]
-[; ;main.c: 170: case 12:
-"170
-[e :U 1266 ]
-[; ;main.c: 171: do { LATAbits.LATA5 = 0; } while(0);
-"171
-[e :U 1269 ]
+[e :U 1227 ]
+[; ;main.c: 150: do { LATAbits.LATA5 = 0; } while(0);
+"150
+[e :U 1231 ]
 {
 [e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
 }
-[e :U 1268 ]
+[e :U 1230 ]
+[; ;main.c: 151: do { LATEbits.LATE0 = 0; } while(0);
+"151
+[e :U 1234 ]
+{
+[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1233 ]
+[; ;main.c: 152: do { LATEbits.LATE1 = 0; } while(0);
+"152
+[e :U 1237 ]
+{
+[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1236 ]
+[; ;main.c: 153: do { LATEbits.LATE2 = 0; } while(0);
+"153
+[e :U 1240 ]
+{
+[e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 1239 ]
+[; ;main.c: 154: do { LATAbits.LATA6 = 0; } while(0);
+"154
+[e :U 1243 ]
+{
+[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
+}
+[e :U 1242 ]
+[; ;main.c: 155: do { LATCbits.LATC0 = 0; } while(0);
+"155
+[e :U 1246 ]
+{
+[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1245 ]
+[; ;main.c: 156: do { LATCbits.LATC1 = 0; } while(0);
+"156
+[e :U 1249 ]
+{
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1248 ]
+[; ;main.c: 157: do { LATCbits.LATC2 = 0; } while(0);
+"157
+[e :U 1252 ]
+{
+[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 1251 ]
+[; ;main.c: 158: do { LATDbits.LATD0 = 0; } while(0);
+"158
+[e :U 1255 ]
+{
+[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1254 ]
+[; ;main.c: 159: do { LATDbits.LATD1 = 0; } while(0);
+"159
+[e :U 1258 ]
+{
+[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1257 ]
+[; ;main.c: 160: break;
+"160
+[e $U 1198  ]
+[; ;main.c: 161: case 2:
+"161
+[e :U 1259 ]
+[; ;main.c: 162: do { LATAbits.LATA0 = 0; } while(0);
+"162
+[e :U 1262 ]
+{
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1261 ]
+[; ;main.c: 163: break;
+"163
+[e $U 1198  ]
+[; ;main.c: 164: case 34:
+"164
+[e :U 1263 ]
+[; ;main.c: 165: do { LATAbits.LATA0 = 1; } while(0);
+"165
+[e :U 1266 ]
+{
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 1265 ]
+[; ;main.c: 166: break;
+"166
+[e $U 1198  ]
+[; ;main.c: 167: case 4:
+"167
+[e :U 1267 ]
+[; ;main.c: 168: do { LATAbits.LATA1 = 0; } while(0);
+"168
+[e :U 1270 ]
+{
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1269 ]
+[; ;main.c: 169: break;
+"169
+[e $U 1198  ]
+[; ;main.c: 170: case 36:
+"170
+[e :U 1271 ]
+[; ;main.c: 171: do { LATAbits.LATA1 = 1; } while(0);
+"171
+[e :U 1274 ]
+{
+[e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
+}
+[e :U 1273 ]
 [; ;main.c: 172: break;
 "172
-[e $U 1165  ]
-[; ;main.c: 173: case 44:
+[e $U 1198  ]
+[; ;main.c: 173: case 6:
 "173
-[e :U 1270 ]
-[; ;main.c: 174: do { LATAbits.LATA5 = 1; } while(0);
+[e :U 1275 ]
+[; ;main.c: 174: do { LATAbits.LATA2 = 0; } while(0);
 "174
-[e :U 1273 ]
+[e :U 1278 ]
+{
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 1277 ]
+[; ;main.c: 175: break;
+"175
+[e $U 1198  ]
+[; ;main.c: 176: case 38:
+"176
+[e :U 1279 ]
+[; ;main.c: 177: do { LATAbits.LATA2 = 1; } while(0);
+"177
+[e :U 1282 ]
+{
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
+}
+[e :U 1281 ]
+[; ;main.c: 178: break;
+"178
+[e $U 1198  ]
+[; ;main.c: 179: case 8:
+"179
+[e :U 1283 ]
+[; ;main.c: 180: do { LATAbits.LATA3 = 0; } while(0);
+"180
+[e :U 1286 ]
+{
+[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
+}
+[e :U 1285 ]
+[; ;main.c: 181: break;
+"181
+[e $U 1198  ]
+[; ;main.c: 182: case 40:
+"182
+[e :U 1287 ]
+[; ;main.c: 183: do { LATAbits.LATA3 = 1; } while(0);
+"183
+[e :U 1290 ]
+{
+[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 1289 ]
+[; ;main.c: 184: break;
+"184
+[e $U 1198  ]
+[; ;main.c: 185: case 10:
+"185
+[e :U 1291 ]
+[; ;main.c: 186: do { LATAbits.LATA4 = 0; } while(0);
+"186
+[e :U 1294 ]
+{
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 1293 ]
+[; ;main.c: 187: break;
+"187
+[e $U 1198  ]
+[; ;main.c: 188: case 42:
+"188
+[e :U 1295 ]
+[; ;main.c: 189: do { LATAbits.LATA4 = 1; } while(0);
+"189
+[e :U 1298 ]
+{
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 1297 ]
+[; ;main.c: 190: break;
+"190
+[e $U 1198  ]
+[; ;main.c: 191: case 12:
+"191
+[e :U 1299 ]
+[; ;main.c: 192: do { LATAbits.LATA5 = 0; } while(0);
+"192
+[e :U 1302 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 1301 ]
+[; ;main.c: 193: break;
+"193
+[e $U 1198  ]
+[; ;main.c: 194: case 44:
+"194
+[e :U 1303 ]
+[; ;main.c: 195: do { LATAbits.LATA5 = 1; } while(0);
+"195
+[e :U 1306 ]
 {
 [e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
 }
-[e :U 1272 ]
-[; ;main.c: 175: break;
-"175
-[e $U 1165  ]
-[; ;main.c: 176: default:
-"176
-[e :U 1274 ]
-[; ;main.c: 177: EUSART1_Write('U');
-"177
-[e ( _EUSART1_Write (1 -> -> 85 `ui `uc ]
-[; ;main.c: 178: break;
-"178
-[e $U 1165  ]
-"179
+[e :U 1305 ]
+[; ;main.c: 196: break;
+"196
+[e $U 1198  ]
+[; ;main.c: 198: case 14:
+"198
+[e :U 1307 ]
+[; ;main.c: 199: do { LATEbits.LATE0 = 0; } while(0);
+"199
+[e :U 1310 ]
+{
+[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
 }
-[; ;main.c: 179: }
-[e $U 1165  ]
-"106
-[e :U 1166 ]
-[e [\ _data , $ -> -> 84 `i `uc 1167
- , $ -> -> 73 `i `uc 1168
- , $ -> -> 97 `i `uc 1172
- , $ -> -> 98 `i `uc 1176
- , $ -> -> 88 `i `uc 1180
- , $ -> -> 2 `i `uc 1226
- , $ -> -> 34 `i `uc 1230
- , $ -> -> 4 `i `uc 1234
- , $ -> -> 36 `i `uc 1238
- , $ -> -> 6 `i `uc 1242
- , $ -> -> 38 `i `uc 1246
- , $ -> -> 8 `i `uc 1250
- , $ -> -> 40 `i `uc 1254
- , $ -> -> 10 `i `uc 1258
- , $ -> -> 42 `i `uc 1262
- , $ -> -> 12 `i `uc 1266
- , $ -> -> 44 `i `uc 1270
- 1274 ]
-"179
-[e :U 1165 ]
-[; ;main.c: 180: }
-"180
-[e :UE 1164 ]
+[e :U 1309 ]
+[; ;main.c: 200: break;
+"200
+[e $U 1198  ]
+[; ;main.c: 201: case 46:
+"201
+[e :U 1311 ]
+[; ;main.c: 202: do { LATEbits.LATE0 = 1; } while(0);
+"202
+[e :U 1314 ]
+{
+[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 1313 ]
+[; ;main.c: 203: break;
+"203
+[e $U 1198  ]
+[; ;main.c: 204: case 16:
+"204
+[e :U 1315 ]
+[; ;main.c: 205: do { LATEbits.LATE1 = 0; } while(0);
+"205
+[e :U 1318 ]
+{
+[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1317 ]
+[; ;main.c: 206: break;
+"206
+[e $U 1198  ]
+[; ;main.c: 207: case 48:
+"207
+[e :U 1319 ]
+[; ;main.c: 208: do { LATEbits.LATE1 = 1; } while(0);
+"208
+[e :U 1322 ]
+{
+[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
+}
+[e :U 1321 ]
+[; ;main.c: 209: break;
+"209
+[e $U 1198  ]
+[; ;main.c: 210: case 18:
+"210
+[e :U 1323 ]
+[; ;main.c: 211: do { LATEbits.LATE2 = 0; } while(0);
+"211
+[e :U 1326 ]
+{
+[e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 1325 ]
+[; ;main.c: 212: break;
+"212
+[e $U 1198  ]
+[; ;main.c: 213: case 50:
+"213
+[e :U 1327 ]
+[; ;main.c: 214: do { LATEbits.LATE2 = 1; } while(0);
+"214
+[e :U 1330 ]
+{
+[e = . . _LATEbits 0 2 -> -> 1 `i `uc ]
+}
+[e :U 1329 ]
+[; ;main.c: 215: break;
+"215
+[e $U 1198  ]
+[; ;main.c: 216: case 20:
+"216
+[e :U 1331 ]
+[; ;main.c: 217: do { LATAbits.LATA6 = 0; } while(0);
+"217
+[e :U 1334 ]
+{
+[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
+}
+[e :U 1333 ]
+[; ;main.c: 218: break;
+"218
+[e $U 1198  ]
+[; ;main.c: 219: case 52:
+"219
+[e :U 1335 ]
+[; ;main.c: 220: do { LATAbits.LATA6 = 1; } while(0);
+"220
+[e :U 1338 ]
+{
+[e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
+}
+[e :U 1337 ]
+[; ;main.c: 221: break;
+"221
+[e $U 1198  ]
+[; ;main.c: 222: case 22:
+"222
+[e :U 1339 ]
+[; ;main.c: 223: do { LATCbits.LATC0 = 0; } while(0);
+"223
+[e :U 1342 ]
+{
+[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1341 ]
+[; ;main.c: 224: break;
+"224
+[e $U 1198  ]
+[; ;main.c: 225: case 54:
+"225
+[e :U 1343 ]
+[; ;main.c: 226: do { LATCbits.LATC0 = 1; } while(0);
+"226
+[e :U 1346 ]
+{
+[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 1345 ]
+[; ;main.c: 227: break;
+"227
+[e $U 1198  ]
+[; ;main.c: 228: case 24:
+"228
+[e :U 1347 ]
+[; ;main.c: 229: do { LATCbits.LATC1 = 0; } while(0);
+"229
+[e :U 1350 ]
+{
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1349 ]
+[; ;main.c: 230: break;
+"230
+[e $U 1198  ]
+[; ;main.c: 231: case 56:
+"231
+[e :U 1351 ]
+[; ;main.c: 232: do { LATCbits.LATC1 = 1; } while(0);
+"232
+[e :U 1354 ]
+{
+[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
+}
+[e :U 1353 ]
+[; ;main.c: 233: break;
+"233
+[e $U 1198  ]
+[; ;main.c: 234: case 26:
+"234
+[e :U 1355 ]
+[; ;main.c: 235: do { LATCbits.LATC2 = 0; } while(0);
+"235
+[e :U 1358 ]
+{
+[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 1357 ]
+[; ;main.c: 236: break;
+"236
+[e $U 1198  ]
+[; ;main.c: 237: case 58:
+"237
+[e :U 1359 ]
+[; ;main.c: 238: do { LATCbits.LATC2 = 1; } while(0);
+"238
+[e :U 1362 ]
+{
+[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
+}
+[e :U 1361 ]
+[; ;main.c: 239: break;
+"239
+[e $U 1198  ]
+[; ;main.c: 240: case 28:
+"240
+[e :U 1363 ]
+[; ;main.c: 241: do { LATDbits.LATD0 = 0; } while(0);
+"241
+[e :U 1366 ]
+{
+[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1365 ]
+[; ;main.c: 242: break;
+"242
+[e $U 1198  ]
+[; ;main.c: 243: case 60:
+"243
+[e :U 1367 ]
+[; ;main.c: 244: do { LATDbits.LATD0 = 1; } while(0);
+"244
+[e :U 1370 ]
+{
+[e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 1369 ]
+[; ;main.c: 245: break;
+"245
+[e $U 1198  ]
+[; ;main.c: 246: case 30:
+"246
+[e :U 1371 ]
+[; ;main.c: 247: do { LATDbits.LATD1 = 0; } while(0);
+"247
+[e :U 1374 ]
+{
+[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1373 ]
+[; ;main.c: 248: break;
+"248
+[e $U 1198  ]
+[; ;main.c: 249: case 62:
+"249
+[e :U 1375 ]
+[; ;main.c: 250: do { LATDbits.LATD1 = 1; } while(0);
+"250
+[e :U 1378 ]
+{
+[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
+}
+[e :U 1377 ]
+[; ;main.c: 251: break;
+"251
+[e $U 1198  ]
+[; ;main.c: 252: case 120:
+"252
+[e :U 1379 ]
+[; ;main.c: 253: do { LATAbits.LATA0 = 0; } while(0);
+"253
+[e :U 1382 ]
+{
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1381 ]
+[; ;main.c: 254: do { LATAbits.LATA1 = 0; } while(0);
+"254
+[e :U 1385 ]
+{
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1384 ]
+[; ;main.c: 255: do { LATAbits.LATA2 = 0; } while(0);
+"255
+[e :U 1388 ]
+{
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 1387 ]
+[; ;main.c: 256: do { LATAbits.LATA3 = 0; } while(0);
+"256
+[e :U 1391 ]
+{
+[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
+}
+[e :U 1390 ]
+[; ;main.c: 257: do { LATAbits.LATA4 = 0; } while(0);
+"257
+[e :U 1394 ]
+{
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 1393 ]
+[; ;main.c: 258: do { LATAbits.LATA5 = 0; } while(0);
+"258
+[e :U 1397 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 1396 ]
+[; ;main.c: 259: do { LATEbits.LATE0 = 0; } while(0);
+"259
+[e :U 1400 ]
+{
+[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1399 ]
+[; ;main.c: 260: do { LATEbits.LATE1 = 0; } while(0);
+"260
+[e :U 1403 ]
+{
+[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1402 ]
+[; ;main.c: 261: do { LATEbits.LATE2 = 0; } while(0);
+"261
+[e :U 1406 ]
+{
+[e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 1405 ]
+[; ;main.c: 262: do { LATAbits.LATA6 = 0; } while(0);
+"262
+[e :U 1409 ]
+{
+[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
+}
+[e :U 1408 ]
+[; ;main.c: 263: do { LATCbits.LATC0 = 0; } while(0);
+"263
+[e :U 1412 ]
+{
+[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1411 ]
+[; ;main.c: 264: do { LATDbits.LATD0 = 0; } while(0);
+"264
+[e :U 1415 ]
+{
+[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1414 ]
+[; ;main.c: 265: do { LATDbits.LATD1 = 0; } while(0);
+"265
+[e :U 1418 ]
+{
+[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1417 ]
+[; ;main.c: 266: break;
+"266
+[e $U 1198  ]
+[; ;main.c: 267: default:
+"267
+[e :U 1419 ]
+[; ;main.c: 268: EUSART1_Write('U');
+"268
+[e ( _EUSART1_Write (1 -> -> 85 `ui `uc ]
+[; ;main.c: 269: break;
+"269
+[e $U 1198  ]
+"270
+}
+[; ;main.c: 270: }
+[e $U 1198  ]
+"127
+[e :U 1199 ]
+[e [\ _data , $ -> -> 84 `i `uc 1200
+ , $ -> -> 73 `i `uc 1201
+ , $ -> -> 97 `i `uc 1205
+ , $ -> -> 98 `i `uc 1209
+ , $ -> -> 88 `i `uc 1213
+ , $ -> -> 2 `i `uc 1259
+ , $ -> -> 34 `i `uc 1263
+ , $ -> -> 4 `i `uc 1267
+ , $ -> -> 36 `i `uc 1271
+ , $ -> -> 6 `i `uc 1275
+ , $ -> -> 38 `i `uc 1279
+ , $ -> -> 8 `i `uc 1283
+ , $ -> -> 40 `i `uc 1287
+ , $ -> -> 10 `i `uc 1291
+ , $ -> -> 42 `i `uc 1295
+ , $ -> -> 12 `i `uc 1299
+ , $ -> -> 44 `i `uc 1303
+ , $ -> -> 14 `i `uc 1307
+ , $ -> -> 46 `i `uc 1311
+ , $ -> -> 16 `i `uc 1315
+ , $ -> -> 48 `i `uc 1319
+ , $ -> -> 18 `i `uc 1323
+ , $ -> -> 50 `i `uc 1327
+ , $ -> -> 20 `i `uc 1331
+ , $ -> -> 52 `i `uc 1335
+ , $ -> -> 22 `i `uc 1339
+ , $ -> -> 54 `i `uc 1343
+ , $ -> -> 24 `i `uc 1347
+ , $ -> -> 56 `i `uc 1351
+ , $ -> -> 26 `i `uc 1355
+ , $ -> -> 58 `i `uc 1359
+ , $ -> -> 28 `i `uc 1363
+ , $ -> -> 60 `i `uc 1367
+ , $ -> -> 30 `i `uc 1371
+ , $ -> -> 62 `i `uc 1375
+ , $ -> -> 120 `i `uc 1379
+ 1419 ]
+"270
+[e :U 1198 ]
+[; ;main.c: 271: }
+"271
+[e :UE 1197 ]
 }
 [p f _printf 8388608 ]
-[a 1C 13 10 76 69 68 95 68 48 32 116 111 103 103 108 101 13 10 0 ]
-[a 2C 13 10 0 ]
+[a 1C 13 10 0 ]
+

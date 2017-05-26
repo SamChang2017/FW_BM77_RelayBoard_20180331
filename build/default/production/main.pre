@@ -9581,33 +9581,40 @@ site0_IL[13] = '.';
 site0_IL[14] = '8';
 site0_IL[15] = '7';
 
+
+do { LATAbits.LATA0 = 0; } while(0);
+do { LATAbits.LATA1 = 0; } while(0);
+do { LATAbits.LATA2 = 0; } while(0);
+do { LATAbits.LATA3 = 0; } while(0);
+do { LATAbits.LATA4 = 0; } while(0);
+do { LATAbits.LATA5 = 0; } while(0);
+do { LATEbits.LATE0 = 0; } while(0);
+do { LATEbits.LATE1 = 0; } while(0);
+do { LATEbits.LATE2 = 0; } while(0);
+do { LATAbits.LATA6 = 0; } while(0);
+do { LATCbits.LATC0 = 0; } while(0);
+do { LATCbits.LATC1 = 0; } while(0);
+do { LATCbits.LATC2 = 0; } while(0);
+do { LATDbits.LATD0 = 0; } while(0);
+do { LATDbits.LATD1 = 0; } while(0);
+
 while (1)
 {
-printf("\r\nLED_D0 toggle\r\n");
 
-for (int count=0; count<20; count++){
-_delay((unsigned long)((25)*(8000000/4000.0)));
-}
-
-
+# 90
 while((eusart1RxCount)){
 
 RxData = EUSART1_Read();
-for (int flashCount=0; flashCount<20; flashCount++){
-do { LATDbits.LATD1 = ~LATDbits.LATD1; } while(0);
-for (int count=0; count<20; count++){
-_delay((unsigned long)((15)*(8000000/4000.0)));
-}
-}
+
+# 103
 PIE1bits.TX1IE=0;
 EUSART1_Write(RxData);
 printf("\r\n");
 
+
+
 relayControl(RxData);
 };
-
-
-
 }
 
 }
@@ -9693,6 +9700,76 @@ do { LATAbits.LATA5 = 0; } while(0);
 break;
 case 44:
 do { LATAbits.LATA5 = 1; } while(0);
+break;
+
+case 14:
+do { LATEbits.LATE0 = 0; } while(0);
+break;
+case 46:
+do { LATEbits.LATE0 = 1; } while(0);
+break;
+case 16:
+do { LATEbits.LATE1 = 0; } while(0);
+break;
+case 48:
+do { LATEbits.LATE1 = 1; } while(0);
+break;
+case 18:
+do { LATEbits.LATE2 = 0; } while(0);
+break;
+case 50:
+do { LATEbits.LATE2 = 1; } while(0);
+break;
+case 20:
+do { LATAbits.LATA6 = 0; } while(0);
+break;
+case 52:
+do { LATAbits.LATA6 = 1; } while(0);
+break;
+case 22:
+do { LATCbits.LATC0 = 0; } while(0);
+break;
+case 54:
+do { LATCbits.LATC0 = 1; } while(0);
+break;
+case 24:
+do { LATCbits.LATC1 = 0; } while(0);
+break;
+case 56:
+do { LATCbits.LATC1 = 1; } while(0);
+break;
+case 26:
+do { LATCbits.LATC2 = 0; } while(0);
+break;
+case 58:
+do { LATCbits.LATC2 = 1; } while(0);
+break;
+case 28:
+do { LATDbits.LATD0 = 0; } while(0);
+break;
+case 60:
+do { LATDbits.LATD0 = 1; } while(0);
+break;
+case 30:
+do { LATDbits.LATD1 = 0; } while(0);
+break;
+case 62:
+do { LATDbits.LATD1 = 1; } while(0);
+break;
+case 120:
+do { LATAbits.LATA0 = 0; } while(0);
+do { LATAbits.LATA1 = 0; } while(0);
+do { LATAbits.LATA2 = 0; } while(0);
+do { LATAbits.LATA3 = 0; } while(0);
+do { LATAbits.LATA4 = 0; } while(0);
+do { LATAbits.LATA5 = 0; } while(0);
+do { LATEbits.LATE0 = 0; } while(0);
+do { LATEbits.LATE1 = 0; } while(0);
+do { LATEbits.LATE2 = 0; } while(0);
+do { LATAbits.LATA6 = 0; } while(0);
+do { LATCbits.LATC0 = 0; } while(0);
+do { LATDbits.LATD0 = 0; } while(0);
+do { LATDbits.LATD1 = 0; } while(0);
 break;
 default:
 EUSART1_Write('U');

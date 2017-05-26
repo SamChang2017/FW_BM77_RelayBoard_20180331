@@ -59,34 +59,55 @@ void main(void)
     site0_IL[13] = '.';                 //AntennaFP_TP_IL + Shield 
     site0_IL[14] = '8';
     site0_IL[15] = '7';
+    // initialize IO
+    // site 0
+    IO_RA0_SetLow(); //CD1_1 
+    IO_RA1_SetLow(); //CD1_2 
+    IO_RA2_SetLow(); //CD1_3 
+    IO_RA3_SetLow(); //CD1_4 
+    IO_RA4_SetLow(); //CD1_5 
+    IO_RA5_SetLow(); //CD1_6 
+    IO_RE0_SetLow(); //CD1_7 
+    IO_RE1_SetLow(); //CD1_8 
+    IO_RE2_SetLow(); //CD2_9 
+    IO_RA6_SetLow(); //CD2_10 
+    IO_RC0_SetLow(); //CD2_11 
+    IO_RC1_SetLow(); //CD2_12 
+    IO_RC2_SetLow(); //CD2_13 
+    IO_RD0_SetLow(); //CD2_14 
+    IO_RD1_SetLow(); //CD2_15 
     //==============================
     while (1)
     {
-        printf("\r\nLED_D0 toggle\r\n");
+        /* for test
+         printf("\r\nLED_D0 toggle\r\n");
         // delay 500ms
         for (int count=0; count<20; count++){
             __delay_ms(25);
         } // end for
-       
+         */
         // UART RX interrupt
         while(EUSART1_DataReady){ //check if any data is received
             // UART interrupt test
             RxData = EUSART1_Read();		// Read data received
-            for (int flashCount=0; flashCount<20; flashCount++){
+            
+            /* for test
+             for (int flashCount=0; flashCount<20; flashCount++){
             IO_RD1_Toggle(); // D7 toggle
             for (int count=0; count<20; count++){
                 __delay_ms(15);
             } // end inner for
             } // end outer for
+             */
+            // Echo back data for test
             PIE1bits.TX1IE=0; // disable UART TX interrupt
             EUSART1_Write(RxData);			// Echo back the data received
             printf("\r\n");
+            // end echo
+            
             // Relay board control
             relayControl(RxData);
         };	// end while(DataReady)
-        
-        
-     
     } // end while(1))
     
 } // end main
@@ -173,6 +194,76 @@ void relayControl(char data){
         case 44: // site 0
             IO_RA5_SetHigh(); //CD1_6
             break;
+        // Date: 2017/05/26
+        case 14: // site 0
+            IO_RE0_SetLow(); // CD1_7
+            break;
+        case 46: // site 0
+            IO_RE0_SetHigh(); //CD1_7
+            break;
+        case 16: // site 0
+            IO_RE1_SetLow(); // CD1_8
+            break;
+        case 48: // site 0
+            IO_RE1_SetHigh(); //CD1_8
+            break;
+        case 18: // site 0
+            IO_RE2_SetLow(); // CD2_9
+            break;
+        case 50: // site 0
+            IO_RE2_SetHigh(); //CD2_9
+            break;
+        case 20: // site 0
+            IO_RA6_SetLow(); // CD2_10
+            break;
+        case 52: // site 0
+            IO_RA6_SetHigh(); //CD2_10
+            break;
+        case 22: // site 0
+            IO_RC0_SetLow(); // CD2_11
+            break;
+        case 54: // site 0
+            IO_RC0_SetHigh(); //CD2_11
+            break;
+        case 24: // site 0
+            IO_RC1_SetLow(); // CD2_12
+            break;
+        case 56: // site 0
+            IO_RC1_SetHigh(); //CD2_12
+            break;
+        case 26: // site 0
+            IO_RC2_SetLow(); // CD2_13
+            break;
+        case 58: // site 0
+            IO_RC2_SetHigh(); //CD2_13
+            break;
+        case 28: // site 0
+            IO_RD0_SetLow(); // CD2_14
+            break;
+        case 60: // site 0
+            IO_RD0_SetHigh(); //CD2_14
+            break;
+        case 30: // site 0
+            IO_RD1_SetLow(); // CD2_15
+            break;
+        case 62: // site 0
+            IO_RD1_SetHigh(); //CD2_15
+            break;
+        case 120: // site 0
+            IO_RA0_SetLow(); // CD1_1
+            IO_RA1_SetLow(); // CD1_2
+            IO_RA2_SetLow(); // CD1_3
+            IO_RA3_SetLow(); // CD1_4
+            IO_RA4_SetLow(); // CD1_5
+            IO_RA5_SetLow(); // CD1_6
+            IO_RE0_SetLow(); // CD1_7
+            IO_RE1_SetLow(); // CD1_8
+            IO_RE2_SetLow(); // CD2_9
+            IO_RA6_SetLow(); // CD2_10
+            IO_RC0_SetLow(); // CD2_11
+            IO_RD0_SetLow(); // CD2_14
+            IO_RD1_SetLow(); // CD2_15
+            break;    
         default:
             EUSART1_Write('U');
             break;
