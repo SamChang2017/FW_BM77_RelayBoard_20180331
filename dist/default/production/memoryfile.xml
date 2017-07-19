@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\BM70_RelayBoardUARTInterrupt_20170519.X.production.hex">
+  <executable name="dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.hex">
     <memory name="program">
       <units>bytes</units>
       <length>32768</length>
-      <used>1364</used>
-      <free>31404</free>
+      <used>1390</used>
+      <free>31378</free>
     </memory>
     <memory name="data">
       <units>bytes</units>

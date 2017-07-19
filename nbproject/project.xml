@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>BM70_RelayBoardUARTInterrupt_20170519</name>
+            <name>BM77_RelayBoardUARTInterrupt_20170719</name>
             <creation-uuid>fa917822-9e81-45c8-9e56-c21c29341fca</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>

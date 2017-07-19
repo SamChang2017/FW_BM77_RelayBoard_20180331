@@ -140,7 +140,7 @@ void relayControl(char data){
         case 98: // 'b' set high RD_0
             IO_RD0_SetHigh();
             break;
-        case 88: // 'X' clsoe all 
+        case 88: // 'X' all relay open 
             // site 0
             IO_RA0_SetLow(); //CD1_1 
             IO_RA1_SetLow(); //CD1_2 
@@ -157,90 +157,100 @@ void relayControl(char data){
             IO_RC2_SetLow(); //CD2_13 
             IO_RD0_SetLow(); //CD2_14 
             IO_RD1_SetLow(); //CD2_15 
+            IO_RB6_SetLow(); 
             break;
-        case 2: // site 0
+        case 2: // site 0; DUT UART open
             IO_RA0_SetLow(); //CD1_1 
             break;
-        case 34: // site 0
+        case 34: // site 0; DUT UART close
             IO_RA0_SetHigh(); //CD1_1
             break;
-        case 4: // site 0 
+        
+        //======IBDK mode=============
+        case 4: // site 0; P20 open 
             IO_RA1_SetLow(); //CD1_2
             break;
-        case 36: // site 0
+        case 36: // site 0; P20 close
             IO_RA1_SetHigh(); //CD1_2
             break;
-        case 6: // site 0
+        case 5: // site 0; EAN open 
+            IO_RB6_SetLow(); 
+            break;
+        case 37: // site 0; EAN close
+            IO_RB6_SetHigh(); 
+            break;
+        //===========================
+        case 6: // site 0; RST_N open
             IO_RA2_SetLow();  //CD1_3
             break;
-        case 38: // site 0
+        case 38: // site 0; RST_N close
             IO_RA2_SetHigh(); //CD1_3
             break;
-        case 8: // site 0
+        case 8: // site 0; LDO33=/=NC
             IO_RA3_SetLow(); // CD1_4
             break;
-        case 40: // site 0
+        case 40: // site 0; LDO33==NC
             IO_RA3_SetHigh(); //CD1_4
             break;
-         case 10: // site 0
+         case 10: // site 0; K_ChanB==LDO33
             IO_RA4_SetLow(); // CD1_5
             break;
-        case 42: // site 0
+        case 42: // site 0; K_ChanB==NC
             IO_RA4_SetHigh(); //CD1_5
             break;
-        case 12: // site 0
+        case 12: // site 0; LDO18
             IO_RA5_SetLow(); // CD1_6
             break;
-        case 44: // site 0
+        case 44: // site 0; PMUDLO
             IO_RA5_SetHigh(); //CD1_6
             break;
         // Date: 2017/05/26
-        case 14: // site 0
+        case 14: // site 0; K_CanB==PMULDO
             IO_RE0_SetLow(); // CD1_7
             break;
-        case 46: // site 0
+        case 46: // site 0; K_ChanB==LDO18
             IO_RE0_SetHigh(); //CD1_7
             break;
-        case 16: // site 0
+        case 16: // site 0; K_ChanB=\=P34
             IO_RE1_SetLow(); // CD1_8
             break;
-        case 48: // site 0
+        case 48: // site 0 K_ChanB==P34
             IO_RE1_SetHigh(); //CD1_8
             break;
-        case 18: // site 0
+        case 18: // site 0; GPIO=/=OSGANG
             IO_RE2_SetLow(); // CD2_9
             break;
-        case 50: // site 0
+        case 50: // site 0; GPIO==OSGANG
             IO_RE2_SetHigh(); //CD2_9
             break;
-        case 20: // site 0
+        case 20: // site 0; K_ChanB=/=P04
             IO_RA6_SetLow(); // CD2_10
             break;
-        case 52: // site 0
+        case 52: // site 0; K_ChanB==P04
             IO_RA6_SetHigh(); //CD2_10
             break;
-        case 22: // site 0
+        case 22: // site 0; K_ChanB=/=P05
             IO_RC0_SetLow(); // CD2_11
             break;
-        case 54: // site 0
+        case 54: // site 0; K_ChanB==P05
             IO_RC0_SetHigh(); //CD2_11
             break;
-        case 24: // site 0
+        case 24: // site 0; K_ChanB=/=P31
             IO_RC1_SetLow(); // CD2_12
             break;
-        case 56: // site 0
+        case 56: // site 0: K_ChanB==P31
             IO_RC1_SetHigh(); //CD2_12
             break;
-        case 26: // site 0
+        case 26: // site 0; K_ChanB=/=P32
             IO_RC2_SetLow(); // CD2_13
             break;
-        case 58: // site 0
+        case 58: // site 0; K_ChanB==P32
             IO_RC2_SetHigh(); //CD2_13
             break;
-        case 28: // site 0
+        case 28: // site 0; K_ChanB=/=P33
             IO_RD0_SetLow(); // CD2_14
             break;
-        case 60: // site 0
+        case 60: // site 0; K_ChanB==P33
             IO_RD0_SetHigh(); //CD2_14
             break;
         case 30: // site 0

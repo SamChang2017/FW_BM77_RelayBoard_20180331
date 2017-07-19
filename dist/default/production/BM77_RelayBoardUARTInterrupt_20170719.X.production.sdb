@@ -27,11 +27,11 @@
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"32 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\main.c
+"32 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\main.c
 [v _main main `(v  1 e 0 0 ]
 "126
 [v _relayControl relayControl `(v  1 e 0 0 ]
-"75 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/eusart1.c
+"75 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 0 0 ]
 "112
 [v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
@@ -43,15 +43,15 @@
 [v _EUSART1_Transmit_ISR EUSART1_Transmit_ISR `(v  1 e 0 0 ]
 "184
 [v _EUSART1_Receive_ISR EUSART1_Receive_ISR `(v  1 e 0 0 ]
-"51 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/interrupt_manager.c
+"51 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 0 0 ]
 "57
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 0 0 ]
-"111 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/mcc.c
+"111 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
 "120
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 0 0 ]
-"51 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/pin_manager.c
+"51 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 0 0 ]
 "49 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f45k22.h
 [v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
@@ -104,6 +104,41 @@
 [v _LATAbits LATAbits `VES544  1 e 1 @3977 ]
 "7908
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
+[s S839 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"7956
+[s S848 . 1 `uc 1 LB0 1 0 :1:0 
+]
+[s S850 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+]
+[s S853 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LB2 1 0 :1:2 
+]
+[s S856 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LB3 1 0 :1:3 
+]
+[s S859 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LB4 1 0 :1:4 
+]
+[s S862 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LB5 1 0 :1:5 
+]
+[s S865 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LB6 1 0 :1:6 
+]
+[s S868 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S871 . 1 `S839 1 . 1 0 `S848 1 . 1 0 `S850 1 . 1 0 `S853 1 . 1 0 `S856 1 . 1 0 `S859 1 . 1 0 `S862 1 . 1 0 `S865 1 . 1 0 `S868 1 . 1 0 ]
+[v _LATBbits LATBbits `VES871  1 e 1 @3978 ]
 "8040
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
 [s S652 . 1 `uc 1 LATC0 1 0 :1:0 
@@ -382,11 +417,11 @@
 ]
 [u S350 . 1 `S315 1 . 1 0 `S324 1 . 1 0 `S333 1 . 1 0 `S324 1 . 1 0 `S333 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES350  1 e 1 @4082 ]
-"29 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\main.c
+"29 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\main.c
 [v _TFNum TFNum `uc  1 e 1 0 ]
 "30
 [v _site0_IL site0_IL `[16]uc  1 e 16 0 ]
-"61 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/eusart1.c
+"61 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/eusart1.c
 [v _eusart1TxHead eusart1TxHead `uc  1 s 1 eusart1TxHead ]
 "62
 [v _eusart1TxTail eusart1TxTail `uc  1 s 1 eusart1TxTail ]
@@ -402,7 +437,7 @@
 [v _eusart1RxBuffer eusart1RxBuffer `[8]uc  1 s 8 eusart1RxBuffer ]
 "69
 [v _eusart1RxCount eusart1RxCount `VEuc  1 e 1 0 ]
-"32 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\main.c
+"32 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\main.c
 [v _main main `(v  1 e 0 0 ]
 {
 "40
@@ -418,7 +453,7 @@
 "126
 [v relayControl@data data `uc  1 a 1 wreg ]
 [v relayControl@data data `uc  1 a 1 16 ]
-"271
+"281
 } 0
 "464 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
 [v _printf printf `(i  1 e 2 0 ]
@@ -431,7 +466,7 @@
 [v printf@f f `*.25Cuc  1 p 2 16 ]
 "1541
 } 0
-"160 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/eusart1.c
+"160 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/eusart1.c
 [v _putch putch `(v  1 e 0 0 ]
 {
 [v putch@txData txData `uc  1 a 1 wreg ]
@@ -448,27 +483,27 @@
 [v EUSART1_Write@txData txData `uc  1 a 1 14 ]
 "153
 } 0
-"111 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/mcc.c
+"111 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
 {
 "118
 } 0
-"51 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/pin_manager.c
+"51 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 0 0 ]
 {
 "91
 } 0
-"120 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/mcc.c
+"120 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 0 0 ]
 {
 "130
 } 0
-"51 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/interrupt_manager.c
+"51 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 0 0 ]
 {
 "55
 } 0
-"75 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/eusart1.c
+"75 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 0 0 ]
 {
 "110
@@ -480,12 +515,12 @@
 [v EUSART1_Read@readValue readValue `uc  1 a 1 14 ]
 "130
 } 0
-"57 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/interrupt_manager.c
+"57 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 0 0 ]
 {
 "72
 } 0
-"165 C:\Users\a17382\MPLABXProjects\BM70_RelayBoardUARTInterrupt_20170519.X\mcc_generated_files/eusart1.c
+"165 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Transmit_ISR EUSART1_Transmit_ISR `(v  1 e 0 0 ]
 {
 "182

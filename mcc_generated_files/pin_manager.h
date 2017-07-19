@@ -151,6 +151,20 @@
 #define IO_RA6_SetDigitalInput()    do { TRISAbits.TRISA6 = 1; } while(0)
 #define IO_RA6_SetDigitalOutput()   do { TRISAbits.TRISA6 = 0; } while(0)
 
+// get/set IO_RB6 aliases
+#define IO_RB6_TRIS               TRISBbits.TRISB6
+#define IO_RB6_LAT                LATBbits.LATB6
+#define IO_RB6_PORT               PORTBbits.RB6
+#define IO_RB6_WPU                WPUBbits.WPUB6
+#define IO_RB6_SetHigh()            do { LATBbits.LATB6 = 1; } while(0)
+#define IO_RB6_SetLow()             do { LATBbits.LATB6 = 0; } while(0)
+#define IO_RB6_Toggle()             do { LATBbits.LATB6 = ~LATBbits.LATB6; } while(0)
+#define IO_RB6_GetValue()           PORTBbits.RB6
+#define IO_RB6_SetDigitalInput()    do { TRISBbits.TRISB6 = 1; } while(0)
+#define IO_RB6_SetDigitalOutput()   do { TRISBbits.TRISB6 = 0; } while(0)
+#define IO_RB6_SetPullup()      do { WPUBbits.WPUB6 = 1; } while(0)
+#define IO_RB6_ResetPullup()    do { WPUBbits.WPUB6 = 0; } while(0)
+
 // get/set IO_RC0 aliases
 #define IO_RC0_TRIS               TRISCbits.TRISC0
 #define IO_RC0_LAT                LATCbits.LATC0
