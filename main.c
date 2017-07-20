@@ -100,9 +100,9 @@ void main(void)
             } // end outer for
              */
             // Echo back data for test
-            PIE1bits.TX1IE=0; // disable UART TX interrupt
-            EUSART1_Write(RxData);			// Echo back the data received
-            printf("\r\n");
+            //PIE1bits.TX1IE=0; // disable UART TX interrupt
+            //EUSART1_Write(RxData);			// Echo back the data received
+            //printf("\r\n");
             // end echo
             
             // Relay board control

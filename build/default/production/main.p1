@@ -152,27 +152,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _LATDbits `VS499 ~T0 @X0 0 e@3980 ]
 "155 mcc_generated_files/eusart1.h
 [v _EUSART1_Read `(uc ~T0 @X0 0 ef ]
-"9759 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f45k22.h
-[s S563 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S563 . TMR1IE TMR2IE CCP1IE SSP1IE TX1IE RC1IE ADIE ]
-"9768
-[s S564 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S564 . . SSPIE TXIE RCIE ]
-"9758
-[u S562 `S563 1 `S564 1 ]
-[n S562 . . . ]
-"9775
-[v _PIE1bits `VS562 ~T0 @X0 0 e@3997 ]
-"180 mcc_generated_files/eusart1.h
-[v _EUSART1_Write `(v ~T0 @X0 0 ef1`uc ]
-"207 C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdio.h
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
 "27 main.c
 [v _relayControl `(v ~T0 @X0 0 ef1`uc ]
 "78 mcc_generated_files/eusart1.h
 [v _eusart1RxCount `Vuc ~T0 @X0 0 e ]
 "106
 [v _EUSART1_Initialize `(v ~T0 @X0 0 ef ]
+"180
+[v _EUSART1_Write `(v ~T0 @X0 0 ef1`uc ]
 [v F7961 `(v ~T0 @X0 1 tf1`ul ]
 "161 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18.h
 [v __delay `JF7961 ~T0 @X0 0 e ]
@@ -7932,15 +7919,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 92: RxData = EUSART1_Read();
 "92
 [e = _RxData ( _EUSART1_Read ..  ]
-[; ;main.c: 103: PIE1bits.TX1IE=0;
-"103
-[e = . . _PIE1bits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 104: EUSART1_Write(RxData);
-"104
-[e ( _EUSART1_Write (1 _RxData ]
-[; ;main.c: 105: printf("\r\n");
-"105
-[e ( _printf :s 1C ]
 [; ;main.c: 109: relayControl(RxData);
 "109
 [e ( _relayControl (1 _RxData ]
@@ -8765,6 +8743,3 @@ Version 3.2 HI-TECH Software Intermediate Code
 "281
 [e :UE 1197 ]
 }
-[p f _printf 8388608 ]
-[a 1C 13 10 0 ]
-

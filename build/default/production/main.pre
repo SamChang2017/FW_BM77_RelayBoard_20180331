@@ -9606,13 +9606,7 @@ while((eusart1RxCount)){
 
 RxData = EUSART1_Read();
 
-# 103
-PIE1bits.TX1IE=0;
-EUSART1_Write(RxData);
-printf("\r\n");
-
-
-
+# 109
 relayControl(RxData);
 };
 }
