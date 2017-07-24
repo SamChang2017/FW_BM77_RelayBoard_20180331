@@ -25,9 +25,9 @@
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"32 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\main.c
+"26 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\main.c
 [v _main main `(v  1 e 0 0 ]
-"126
+"120
 [v _relayControl relayControl `(v  1 e 0 0 ]
 "75 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 0 0 ]
@@ -413,9 +413,9 @@
 ]
 [u S350 . 1 `S315 1 . 1 0 `S324 1 . 1 0 `S333 1 . 1 0 `S324 1 . 1 0 `S333 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES350  1 e 1 @4082 ]
-"29 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\main.c
+"23 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\main.c
 [v _TFNum TFNum `uc  1 e 1 0 ]
-"30
+"24
 [v _site0_IL site0_IL `[16]uc  1 e 16 0 ]
 "61 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/eusart1.c
 [v _eusart1TxHead eusart1TxHead `uc  1 s 1 eusart1TxHead ]
@@ -433,23 +433,23 @@
 [v _eusart1RxBuffer eusart1RxBuffer `[8]uc  1 s 8 eusart1RxBuffer ]
 "69
 [v _eusart1RxCount eusart1RxCount `VEuc  1 e 1 0 ]
-"32 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\main.c
+"26 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\main.c
 [v _main main `(v  1 e 0 0 ]
 {
-"40
+"34
 [v main@RxData RxData `uc  1 a 1 19 ]
-"113
+"107
 } 0
-"126
+"120
 [v _relayControl relayControl `(v  1 e 0 0 ]
 {
 [v relayControl@data data `uc  1 a 1 wreg ]
-"132
-[v relayControl@count count `i  1 a 2 17 ]
 "126
+[v relayControl@count count `i  1 a 2 17 ]
+"120
 [v relayControl@data data `uc  1 a 1 wreg ]
 [v relayControl@data data `uc  1 a 1 16 ]
-"281
+"280
 } 0
 "132 C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Write EUSART1_Write `(v  1 e 0 0 ]

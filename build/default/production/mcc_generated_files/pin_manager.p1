@@ -7469,8 +7469,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 161: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 163: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 165: extern __nonreentrant void _delay3(unsigned char);
-[; ;pin_manager.h: 304: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 316: void PIN_MANAGER_IOC(void);
+[; ;pin_manager.h: 318: void PIN_MANAGER_Initialize (void);
+[; ;pin_manager.h: 330: void PIN_MANAGER_IOC(void);
 [; ;stdbool.h: 12: typedef unsigned char bool;
 "51 mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
@@ -7501,9 +7501,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pin_manager.c: 66: TRISA = 0x80;
 "66
 [e = _TRISA -> -> 128 `i `uc ]
-[; ;pin_manager.c: 67: TRISB = 0xBF;
+[; ;pin_manager.c: 67: TRISB = 0x3F;
 "67
-[e = _TRISB -> -> 191 `i `uc ]
+[e = _TRISB -> -> 63 `i `uc ]
 [; ;pin_manager.c: 68: TRISC = 0xB8;
 "68
 [e = _TRISC -> -> 184 `i `uc ]

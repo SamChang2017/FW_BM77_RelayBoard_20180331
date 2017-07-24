@@ -1,13 +1,7 @@
 /**
   Summary:
-    This is the BM70 relay board main file created on 2017/05/24
- * always print LED_0 toggle 
- * UART interrupt. 
- * When receive 'T' write TFnum
- * When receive 'I' write loss
- * When receive 'a' set low RD_0
- * When receive 'b' set high RD_0
- * default write 'U'
+    This is the BM77 relay board main file created on 2017/07/21 by Sam Chang
+ 
   Description:
     This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
@@ -158,6 +152,7 @@ void relayControl(char data){
             IO_RD0_SetLow(); //CD2_14 
             IO_RD1_SetLow(); //CD2_15 
             IO_RB6_SetLow(); 
+            IO_RB7_SetLow(); 
             break;
         case 2: // site 0; DUT UART open
             IO_RA0_SetLow(); //CD1_1 
@@ -254,25 +249,29 @@ void relayControl(char data){
             IO_RD0_SetHigh(); //CD2_14
             break;
         case 30: // site 0
-            IO_RD1_SetLow(); // CD2_15
+            IO_RB7_SetLow(); // CD2_15
             break;
         case 62: // site 0
-            IO_RD1_SetHigh(); //CD2_15
+            IO_RB7_SetHigh(); //CD2_15
             break;
-        case 120: // site 0
-            IO_RA0_SetLow(); // CD1_1
-            IO_RA1_SetLow(); // CD1_2
-            IO_RA2_SetLow(); // CD1_3
-            IO_RA3_SetLow(); // CD1_4
-            IO_RA4_SetLow(); // CD1_5
-            IO_RA5_SetLow(); // CD1_6
-            IO_RE0_SetLow(); // CD1_7
-            IO_RE1_SetLow(); // CD1_8
-            IO_RE2_SetLow(); // CD2_9
-            IO_RA6_SetLow(); // CD2_10
-            IO_RC0_SetLow(); // CD2_11
-            IO_RD0_SetLow(); // CD2_14
-            IO_RD1_SetLow(); // CD2_15
+        case 120: // site 0 x
+            IO_RA0_SetLow(); //CD1_1 
+            IO_RA1_SetLow(); //CD1_2 
+            IO_RA2_SetLow(); //CD1_3 
+            IO_RA3_SetLow(); //CD1_4 
+            IO_RA4_SetLow(); //CD1_5 
+            IO_RA5_SetLow(); //CD1_6 
+            IO_RE0_SetLow(); //CD1_7 
+            IO_RE1_SetLow(); //CD1_8 
+            IO_RE2_SetLow(); //CD2_9 
+            IO_RA6_SetLow(); //CD2_10 
+            IO_RC0_SetLow(); //CD2_11 
+            IO_RC1_SetLow(); //CD2_12 
+            IO_RC2_SetLow(); //CD2_13 
+            IO_RD0_SetLow(); //CD2_14 
+            IO_RD1_SetLow(); //CD2_15 
+            IO_RB6_SetLow(); 
+            IO_RB7_SetLow();
             break;    
         default:
             EUSART1_Write('U');

@@ -9413,10 +9413,10 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 304 "mcc_generated_files/pin_manager.h"
+# 318 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
 
-# 316
+# 330
 void PIN_MANAGER_IOC(void);
 
 # 13 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdint.h"
@@ -9543,7 +9543,7 @@ void SYSTEM_Initialize(void);
 # 82
 void OSCILLATOR_Initialize(void);
 
-# 26 "main.c"
+# 20 "main.c"
 void sendString(const char *dataPtr);
 void relayControl(char data);
 
@@ -9601,12 +9601,12 @@ do { LATDbits.LATD1 = 0; } while(0);
 while (1)
 {
 
-# 90
+# 84
 while((eusart1RxCount)){
 
 RxData = EUSART1_Read();
 
-# 109
+# 103
 relayControl(RxData);
 };
 }
@@ -9659,6 +9659,7 @@ do { LATCbits.LATC2 = 0; } while(0);
 do { LATDbits.LATD0 = 0; } while(0);
 do { LATDbits.LATD1 = 0; } while(0);
 do { LATBbits.LATB6 = 0; } while(0);
+do { LATBbits.LATB7 = 0; } while(0);
 break;
 case 2:
 do { LATAbits.LATA0 = 0; } while(0);
@@ -9755,10 +9756,10 @@ case 60:
 do { LATDbits.LATD0 = 1; } while(0);
 break;
 case 30:
-do { LATDbits.LATD1 = 0; } while(0);
+do { LATBbits.LATB7 = 0; } while(0);
 break;
 case 62:
-do { LATDbits.LATD1 = 1; } while(0);
+do { LATBbits.LATB7 = 1; } while(0);
 break;
 case 120:
 do { LATAbits.LATA0 = 0; } while(0);
@@ -9772,8 +9773,12 @@ do { LATEbits.LATE1 = 0; } while(0);
 do { LATEbits.LATE2 = 0; } while(0);
 do { LATAbits.LATA6 = 0; } while(0);
 do { LATCbits.LATC0 = 0; } while(0);
+do { LATCbits.LATC1 = 0; } while(0);
+do { LATCbits.LATC2 = 0; } while(0);
 do { LATDbits.LATD0 = 0; } while(0);
 do { LATDbits.LATD1 = 0; } while(0);
+do { LATBbits.LATB6 = 0; } while(0);
+do { LATBbits.LATB7 = 0; } while(0);
 break;
 default:
 EUSART1_Write('U');
