@@ -272,7 +272,22 @@ void relayControl(char data){
             IO_RD1_SetLow(); //CD2_15 
             IO_RB6_SetLow(); 
             IO_RB7_SetLow();
-            break;    
+            break;  
+            // 2018/03/05
+            // Sam Chang A17382
+            // FW update for BM77 schematic_V3
+            case 47: // site 0
+            IO_RB1_SetHigh(); // CD2_15
+            break;
+            case 35: // site 0
+            IO_RB7_SetHigh(); // CD2_15
+            break;
+            case 49: // site 0
+            IO_RB0_SetHigh(); // CD2_15
+            break;
+            case 51: // site 0
+            IO_RD7_SetHigh(); // CD2_15
+            break;
         default:
             EUSART1_Write('U');
             break;

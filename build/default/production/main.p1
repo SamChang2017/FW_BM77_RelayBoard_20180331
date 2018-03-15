@@ -7679,8 +7679,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 161: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 163: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 165: extern __nonreentrant void _delay3(unsigned char);
-[; ;pin_manager.h: 318: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 330: void PIN_MANAGER_IOC(void);
+[; ;pin_manager.h: 366: void PIN_MANAGER_Initialize (void);
+[; ;pin_manager.h: 378: void PIN_MANAGER_IOC(void);
 [; ;stdint.h: 13: typedef signed char int8_t;
 [; ;stdint.h: 20: typedef signed int int16_t;
 [; ;stdint.h: 28: typedef signed short long int int24_t;
@@ -8718,18 +8718,70 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 275: break;
 "275
 [e $U 1198  ]
-[; ;main.c: 276: default:
-"276
-[e :U 1445 ]
-[; ;main.c: 277: EUSART1_Write('U');
-"277
-[e ( _EUSART1_Write (1 -> -> 85 `ui `uc ]
-[; ;main.c: 278: break;
-"278
-[e $U 1198  ]
+[; ;main.c: 279: case 47:
 "279
+[e :U 1445 ]
+[; ;main.c: 280: do { LATBbits.LATB1 = 1; } while(0);
+"280
+[e :U 1448 ]
+{
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
-[; ;main.c: 279: }
+[e :U 1447 ]
+[; ;main.c: 281: break;
+"281
+[e $U 1198  ]
+[; ;main.c: 282: case 35:
+"282
+[e :U 1449 ]
+[; ;main.c: 283: do { LATBbits.LATB7 = 1; } while(0);
+"283
+[e :U 1452 ]
+{
+[e = . . _LATBbits 0 7 -> -> 1 `i `uc ]
+}
+[e :U 1451 ]
+[; ;main.c: 284: break;
+"284
+[e $U 1198  ]
+[; ;main.c: 285: case 49:
+"285
+[e :U 1453 ]
+[; ;main.c: 286: do { LATBbits.LATB0 = 1; } while(0);
+"286
+[e :U 1456 ]
+{
+[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 1455 ]
+[; ;main.c: 287: break;
+"287
+[e $U 1198  ]
+[; ;main.c: 288: case 51:
+"288
+[e :U 1457 ]
+[; ;main.c: 289: do { LATDbits.LATD7 = 1; } while(0);
+"289
+[e :U 1460 ]
+{
+[e = . . _LATDbits 0 7 -> -> 1 `i `uc ]
+}
+[e :U 1459 ]
+[; ;main.c: 290: break;
+"290
+[e $U 1198  ]
+[; ;main.c: 291: default:
+"291
+[e :U 1461 ]
+[; ;main.c: 292: EUSART1_Write('U');
+"292
+[e ( _EUSART1_Write (1 -> -> 85 `ui `uc ]
+[; ;main.c: 293: break;
+"293
+[e $U 1198  ]
+"294
+}
+[; ;main.c: 294: }
 [e $U 1198  ]
 "121
 [e :U 1199 ]
@@ -8771,10 +8823,14 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> -> 30 `i `uc 1385
  , $ -> -> 62 `i `uc 1389
  , $ -> -> 120 `i `uc 1393
- 1445 ]
-"279
+ , $ -> -> 47 `i `uc 1445
+ , $ -> -> 35 `i `uc 1449
+ , $ -> -> 49 `i `uc 1453
+ , $ -> -> 51 `i `uc 1457
+ 1461 ]
+"294
 [e :U 1198 ]
-[; ;main.c: 280: }
-"280
+[; ;main.c: 295: }
+"295
 [e :UE 1197 ]
 }

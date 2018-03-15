@@ -9413,10 +9413,10 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 318 "mcc_generated_files/pin_manager.h"
+# 366 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
 
-# 330
+# 378
 void PIN_MANAGER_IOC(void);
 
 # 13 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdint.h"
@@ -9779,6 +9779,21 @@ do { LATDbits.LATD0 = 0; } while(0);
 do { LATDbits.LATD1 = 0; } while(0);
 do { LATBbits.LATB6 = 0; } while(0);
 do { LATBbits.LATB7 = 0; } while(0);
+break;
+
+
+
+case 47:
+do { LATBbits.LATB1 = 1; } while(0);
+break;
+case 35:
+do { LATBbits.LATB7 = 1; } while(0);
+break;
+case 49:
+do { LATBbits.LATB0 = 1; } while(0);
+break;
+case 51:
+do { LATDbits.LATD7 = 1; } while(0);
 break;
 default:
 EUSART1_Write('U');
