@@ -151,8 +151,18 @@ void relayControl(char data){
             IO_RC2_SetLow(); //CD2_13 
             IO_RD0_SetLow(); //CD2_14 
             IO_RD1_SetLow(); //CD2_15 
-            IO_RB6_SetLow(); 
+            //IO_RB6_SetLow(); 
+            // Reset K12, K13, K14, K15, K16 
+            // Date: 20180404
             IO_RB7_SetLow(); 
+            IO_RB6_SetLow();
+            IO_RB5_SetLow();
+            IO_RB4_SetLow();
+            IO_RB3_SetLow();
+            IO_RB2_SetLow();
+            IO_RB1_SetLow();
+            IO_RB0_SetLow();
+            IO_RD7_SetLow();
             break;
         case 2: // site 0; DUT UART open
             IO_RA0_SetLow(); //CD1_1 
@@ -168,12 +178,7 @@ void relayControl(char data){
         case 36: // site 0; P20 close
             IO_RA1_SetHigh(); //CD1_2
             break;
-        case 5: // site 0; EAN open 
-            IO_RB6_SetLow(); 
-            break;
-        case 37: // site 0; EAN close
-            IO_RB6_SetHigh(); 
-            break;
+        
         //===========================
         case 6: // site 0; RST_N open
             IO_RA2_SetLow();  //CD1_3
@@ -276,18 +281,63 @@ void relayControl(char data){
             // 2018/03/05
             // Sam Chang A17382
             // FW update for BM77 schematic_V3
-            case 47: // site 0
-            IO_RB1_SetHigh(); // CD2_15
+          case 5: // site 0; EAN open 
+            IO_RB6_SetLow(); 
             break;
-            case 35: // site 0
-            IO_RB7_SetHigh(); // CD2_15
+          case 37: // site 0; EAN close
+            IO_RB6_SetHigh(); 
             break;
-            case 49: // site 0
-            IO_RB0_SetHigh(); // CD2_15
+          case 3: // site 0; EAN open 
+            IO_RB7_SetLow(); 
             break;
-            case 51: // site 0
-            IO_RD7_SetHigh(); // CD2_15
+          case 35: // site 0; EAN close
+            IO_RB7_SetHigh(); 
             break;
+          case 7: // site 0; EAN open 
+            IO_RB5_SetLow(); 
+            break;
+          case 39: // site 0; EAN close
+            IO_RB5_SetHigh(); 
+            break;
+          case 9: // site 0; EAN open 
+            IO_RB4_SetLow(); 
+            break;
+          case 41: // site 0; EAN close
+            IO_RB4_SetHigh(); 
+            break;
+          case 11: // site 0; EAN open 
+            IO_RB3_SetLow(); 
+            break;
+          case 43: // site 0; EAN close
+            IO_RB3_SetHigh(); 
+            break;
+          case 13: // site 0; EAN open 
+            IO_RB2_SetLow(); 
+            break;
+          case 45: // site 0; EAN close
+            IO_RB2_SetHigh(); 
+            break;
+          case 15: // site 0; EAN open 
+            IO_RB1_SetLow(); 
+            break;
+          case 47: // site 0; EAN close
+            IO_RB1_SetHigh(); 
+            break;
+          case 17: // site 0; EAN open 
+            IO_RB0_SetLow(); 
+            break;
+          case 49: // site 0; EAN close
+            IO_RB0_SetHigh(); 
+            break;
+          case 19: // site 0; EAN open 
+            IO_RD7_SetLow(); 
+            break;
+          case 51: // site 0; EAN close
+            IO_RD7_SetHigh(); 
+            break;
+         
+        
+         
         default:
             EUSART1_Write('U');
             break;
