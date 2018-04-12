@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/BM77_RelayBoardUARTInterrupt_20170719.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=BM77_RelayBoardUARTInterrupt_20170719.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=bm77relayboarduartinterrupt20170719.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/FW_BM77_RelayBoard_20180331.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=FW_BM77_RelayBoard_20180331.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=fwbm77relayboard20180331/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/bm77relayboarduartinterrupt20170719.x/bin
+makeDirectory ${TMPDIR}/fwbm77relayboard20180331/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/bm77relayboarduartinterrupt20170719.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/fwbm77relayboard20180331.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/bm77relayboarduartinterrupt20170719.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/fwbm77relayboard20180331.tar *
 checkReturnCode
 
 # Cleanup
