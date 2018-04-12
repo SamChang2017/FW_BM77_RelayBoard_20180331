@@ -11,11 +11,6 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\a17382\AppData\Local\Temp\s8co.obj
-idloc IDLOC 0 200000 200000 8 1
-reset_vec CODE 0 0 0 4 1
-end_init CODE 0 9A 9A 4 1
-config CONFIG 0 300000 300000 E 1
 $dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 cinit CODE 0 5B8 5B8 16 1
 text0 CODE 0 3B6 3B6 A6 1
@@ -33,6 +28,11 @@ text11 CODE 0 588 588 30 1
 cstackCOMRAM COMRAM 1 26 26 14 1
 intcode CODE 0 8 8 92 1
 bssCOMRAM COMRAM 1 1 1 25 1
+$C:\Users\a17382\AppData\Local\Temp\sauk.obj
+idloc IDLOC 0 200000 200000 8 1
+reset_vec CODE 0 0 0 4 1
+end_init CODE 0 9A 9A 4 1
+config CONFIG 0 300000 300000 E 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -356,20 +356,20 @@ FE text1 CODE >136:C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_2
 5AE text11 CODE >199:C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/eusart1.c
 5B4 text11 CODE >201:C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/eusart1.c
 5B6 text11 CODE >202:C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/eusart1.c
-5B8 cinit CODE >2857:C:\Users\a17382\AppData\Local\Temp\s8co.
-5B8 cinit CODE >2859:C:\Users\a17382\AppData\Local\Temp\s8co.
-5B8 cinit CODE >2862:C:\Users\a17382\AppData\Local\Temp\s8co.
-5B8 cinit CODE >2888:C:\Users\a17382\AppData\Local\Temp\s8co.
-5BC cinit CODE >2889:C:\Users\a17382\AppData\Local\Temp\s8co.
-5BE cinit CODE >2890:C:\Users\a17382\AppData\Local\Temp\s8co.
-5BE cinit CODE >2891:C:\Users\a17382\AppData\Local\Temp\s8co.
-5C0 cinit CODE >2892:C:\Users\a17382\AppData\Local\Temp\s8co.
-5C2 cinit CODE >2893:C:\Users\a17382\AppData\Local\Temp\s8co.
-5C4 cinit CODE >2899:C:\Users\a17382\AppData\Local\Temp\s8co.
-5C4 cinit CODE >2901:C:\Users\a17382\AppData\Local\Temp\s8co.
-5C6 cinit CODE >2902:C:\Users\a17382\AppData\Local\Temp\s8co.
-5C8 cinit CODE >2903:C:\Users\a17382\AppData\Local\Temp\s8co.
-5CA cinit CODE >2904:C:\Users\a17382\AppData\Local\Temp\s8co.
+5B8 cinit CODE >2857:C:\Users\a17382\AppData\Local\Temp\sauk.
+5B8 cinit CODE >2859:C:\Users\a17382\AppData\Local\Temp\sauk.
+5B8 cinit CODE >2862:C:\Users\a17382\AppData\Local\Temp\sauk.
+5B8 cinit CODE >2888:C:\Users\a17382\AppData\Local\Temp\sauk.
+5BC cinit CODE >2889:C:\Users\a17382\AppData\Local\Temp\sauk.
+5BE cinit CODE >2890:C:\Users\a17382\AppData\Local\Temp\sauk.
+5BE cinit CODE >2891:C:\Users\a17382\AppData\Local\Temp\sauk.
+5C0 cinit CODE >2892:C:\Users\a17382\AppData\Local\Temp\sauk.
+5C2 cinit CODE >2893:C:\Users\a17382\AppData\Local\Temp\sauk.
+5C4 cinit CODE >2899:C:\Users\a17382\AppData\Local\Temp\sauk.
+5C4 cinit CODE >2901:C:\Users\a17382\AppData\Local\Temp\sauk.
+5C6 cinit CODE >2902:C:\Users\a17382\AppData\Local\Temp\sauk.
+5C8 cinit CODE >2903:C:\Users\a17382\AppData\Local\Temp\sauk.
+5CA cinit CODE >2904:C:\Users\a17382\AppData\Local\Temp\sauk.
 5CE text3 CODE >111:C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/mcc.c
 5CE text3 CODE >114:C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/mcc.c
 5D2 text3 CODE >115:C:\Users\a17382\MPLABXProjects\BM77_RelayBoardUARTInterrupt_20170719.X\mcc_generated_files/mcc.c
@@ -402,7 +402,7 @@ __Hspace_1 3C 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_201
 __Hspace_2 0 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\a17382\AppData\Local\Temp\s8co.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\a17382\AppData\Local\Temp\sauk.obj
 _EUSART1_Initialize 522 0 CODE 0 text7 dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __end_of_INTERRUPT_Initialize 5F2 0 CODE 0 text6 dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
@@ -413,9 +413,9 @@ _LATC F8B 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_2017071
 _LATD F8C 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 _LATE F8D 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 _WPUB F61 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\a17382\AppData\Local\Temp\s8co.obj
+___sp 0 0 STACK 2 stack C:\Users\a17382\AppData\Local\Temp\sauk.obj
 _main 3B6 0 CODE 0 text0 dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
-start 9A 0 CODE 0 init C:\Users\a17382\AppData\Local\Temp\s8co.obj
+start 9A 0 CODE 0 init C:\Users\a17382\AppData\Local\Temp\sauk.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
@@ -427,11 +427,11 @@ __Hpowerup 9A 0 CODE 0 powerup dist/default/production\BM77_RelayBoardUARTInterr
 __CFG_CCP3MX$PORTB5 0 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\a17382\AppData\Local\Temp\s8co.obj
-intlevel0 0 0 CODE 0 text C:\Users\a17382\AppData\Local\Temp\s8co.obj
-intlevel1 0 0 CODE 0 text C:\Users\a17382\AppData\Local\Temp\s8co.obj
-intlevel2 0 0 CODE 0 text C:\Users\a17382\AppData\Local\Temp\s8co.obj
-intlevel3 0 0 CODE 0 text C:\Users\a17382\AppData\Local\Temp\s8co.obj
+__accesstop 60 0 ABS 0 - C:\Users\a17382\AppData\Local\Temp\sauk.obj
+intlevel0 0 0 CODE 0 text C:\Users\a17382\AppData\Local\Temp\sauk.obj
+intlevel1 0 0 CODE 0 text C:\Users\a17382\AppData\Local\Temp\sauk.obj
+intlevel2 0 0 CODE 0 text C:\Users\a17382\AppData\Local\Temp\sauk.obj
+intlevel3 0 0 CODE 0 text C:\Users\a17382\AppData\Local\Temp\sauk.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
@@ -452,8 +452,8 @@ _ANSELB F39 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170
 _ANSELC F3A 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 _ANSELD F3B 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 _ANSELE F3C 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\a17382\AppData\Local\Temp\s8co.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\a17382\AppData\Local\Temp\s8co.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\a17382\AppData\Local\Temp\sauk.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\a17382\AppData\Local\Temp\sauk.obj
 __end_of_INTERRUPT_InterruptManager 9A 0 CODE 0 intcode dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
@@ -507,7 +507,7 @@ __Htext8 0 0 ABS 0 text8 dist/default/production\BM77_RelayBoardUARTInterrupt_20
 __size_of_EUSART1_Transmit_ISR 0 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\a17382\AppData\Local\Temp\s8co.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\a17382\AppData\Local\Temp\sauk.obj
 _BAUDCON1 FB8 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
@@ -601,8 +601,8 @@ _EUSART1_Read 4E8 0 CODE 0 text8 dist/default/production\BM77_RelayBoardUARTInte
 _RCSTA1bits FAB 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
-stackhi 5FF 0 ABS 0 - C:\Users\a17382\AppData\Local\Temp\s8co.obj
-stacklo 60 0 ABS 0 - C:\Users\a17382\AppData\Local\Temp\s8co.obj
+stackhi 5FF 0 ABS 0 - C:\Users\a17382\AppData\Local\Temp\sauk.obj
+stacklo 60 0 ABS 0 - C:\Users\a17382\AppData\Local\Temp\sauk.obj
 __end_of_EUSART1_Write 4E8 0 CODE 0 text2 dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Lintcode 8 0 CODE 0 intcode dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 _OSCCON2 FD2 0 ABS 0 - dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
@@ -641,7 +641,7 @@ __ptext8 4E8 0 CODE 0 text8 dist/default/production\BM77_RelayBoardUARTInterrupt
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Ltext10 0 0 ABS 0 text10 dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Ltext11 0 0 ABS 0 text11 dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
-__ramtop 600 0 RAM 0 ramtop C:\Users\a17382\AppData\Local\Temp\s8co.obj
+__ramtop 600 0 RAM 0 ramtop C:\Users\a17382\AppData\Local\Temp\sauk.obj
 __Lpowerup 9A 0 CODE 0 powerup dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
 __end_of_EUSART1_Read 522 0 CODE 0 text8 dist/default/production\BM77_RelayBoardUARTInterrupt_20170719.X.production.obj
